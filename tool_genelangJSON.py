@@ -48,7 +48,7 @@ def read_characters_file(file_path):
             return list(content)
     except FileNotFoundError:
         print("程序路径下未找到中文字库文件 chs.txt! ")
-        print("可以从 www.example.com 下载规范汉字和常用字符字库，")
+        print("可以从 ws3917.lanzout.com/iXSdT1pcg9ih 下载规范汉字和常用字符字库，")
         print("或手动创建并随后用 tool_unicodesort.py 将字符按照 Unicode 编码排序(否则会出现游戏内字体不显bug)")
         input("按 Enter 重试。")
         return None
