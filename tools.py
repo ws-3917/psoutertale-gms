@@ -53,7 +53,7 @@ class FontGlyph:
             char_perline = self.totalwidth // (
                 self.fontinfo[lang][font].get("extra_x", 0) + self.fontsize[lang][0] + self.rest_x
             )
-            height += (self.fontsize[lang][1] + self.rest_y) * (charcount // char_perline + 1)
+            height += (self.fontsize[lang][1] + self.rest_y + self.fontinfo[lang][font].get("extra_y", 0)) * (charcount // char_perline + 1)
         return height
 
     def check(self, ch) -> str:
@@ -92,8 +92,8 @@ class FontGlyph:
         cfg = self.cfg
         start_x = cfg.get("start_x", 0)
         start_y = cfg.get("start_y", 0)
-        width = cfg.get("extra_x", 0) + self.width
-        height = cfg.get("extra_y", 0) + self.height
+        width = self.width
+        height = self.height
 
         # 检查是否有单独的控制
         specials = cfg.get("special", {})
@@ -148,8 +148,10 @@ class FontGlyph:
             for lang in self.langlist:
                 # 加载配置文件和字符集
                 print(colored(f" -> {lang}", "yellow"))
-                (self.width, self.height) = self.fontsize[lang]
                 self.cfg = self.fontinfo[lang][font]
+                (self.width, self.height) = self.fontsize[lang]
+                self.width += self.cfg.get("extra_x", 0)
+                self.height += self.cfg.get("extra_y", 0)
                 self.font = ImageFont.truetype(f"fonts/{lang}/" + self.cfg["fontfile"], self.cfg["size"])
                 if lang == "en_US":
                     self.encfg = self.cfg
@@ -179,14 +181,13 @@ class FontGlyph:
                         continue
                 # 完毕后调整坐标位
                 self.x = 0
-                self.y += self.height   # 此处和之前算height的+rest都是为了避免重叠打的补丁
+                self.y += self.height + self.rest_y   # 此处和之前算height的+rest都是为了避免重叠打的补丁
                 # 处理透明度
                 pixel = self.glyph.load()
                 threshold = max(self.cfg.get("threshold", 0), 0)
                 for x in range(self.totalwidth):
                     for y in range(self.prev_y, self.y):
                         pixel[x, y] = (pixel[x, y][0], 255 * int(pixel[x, y][1] > threshold))
-                self.y += self.rest_y
             # 全部结束后，保存图片和csv到文件
             bashcmd(f"mkdir -p dist/{self.project}/{self.langlist[-1]}")
             self.glyph.save(f"dist/{self.project}/{self.langlist[-1]}/{font}.png")
