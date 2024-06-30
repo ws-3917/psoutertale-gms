@@ -7,7 +7,7 @@ def bashcmd(cmd):
 # 字图类，每个字体独立
 class FontGlyph:
     # 所属项目（用来查询路径），语言列表，字图宽度
-    def __init__(self, project : str, langlist : list, totalwidth:int = 2500):
+    def __init__(self, project : str, langlist : list, totalwidth:int = 4096):
         self.project = project
         self.langlist = langlist
         self.totalwidth = totalwidth
@@ -179,13 +179,14 @@ class FontGlyph:
                         continue
                 # 完毕后调整坐标位
                 self.x = 0
-                self.y += self.height + self.rest_y   # 此处和之前算height的+rest都是为了避免重叠打的补丁
+                self.y += self.height   # 此处和之前算height的+rest都是为了避免重叠打的补丁
                 # 处理透明度
                 pixel = self.glyph.load()
                 threshold = max(self.cfg.get("threshold", 0), 0)
                 for x in range(self.totalwidth):
                     for y in range(self.prev_y, self.y):
                         pixel[x, y] = (pixel[x, y][0], 255 * int(pixel[x, y][1] > threshold))
+                self.y += self.rest_y
             # 全部结束后，保存图片和csv到文件
             bashcmd(f"mkdir -p dist/{self.project}/{self.langlist[-1]}")
             self.glyph.save(f"dist/{self.project}/{self.langlist[-1]}/{font}.png")
