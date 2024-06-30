@@ -2,16 +2,17 @@
 import csv, json, os
 from PIL import Image, ImageFont, ImageDraw
 from termcolor import colored
-
+def bashcmd(cmd):
+    os.system(f"bash -c \"{cmd}\"")
 # 字图类，每个字体独立
 class FontGlyph:
     # 所属项目（用来查询路径），语言列表，字图宽度
-    def __init__(self, project : str, langlist : list, totalwidth:int = 2048):
+    def __init__(self, project : str, langlist : list, totalwidth:int = 2500):
         self.project = project
         self.langlist = langlist
         self.totalwidth = totalwidth
-        self.rest_y = 8   # 松弛间隔，防止行之间重叠
-        self.rest_x = 4   # 横向间隔
+        self.rest_y = 2   # 松弛间隔，防止行之间重叠
+        self.rest_x = 2   # 横向间隔
         # 根据project读取对应路径下的base,获取字体列表和基本信息
         with open(f"info/{self.project}/base.json", encoding="utf-8") as file:
             self.baseinfo = dict(json.loads(file.read()))
@@ -120,7 +121,7 @@ class FontGlyph:
         #     for y in range(height):
         #         pixel[x, y] = (pixel[x, y][0], 255 * int(pixel[x, y][1] > threshold))
         # testglyph = testglyph.convert("RGBA")
-        # os.system(f"mkdir -p test/{fontname}/")
+        # bashcmd(f"mkdir -p test/{fontname}/")
         # testglyph.save(f"test/{fontname}/uni{format(ord(ch), '04x')}.png")
         ###
 
@@ -186,7 +187,7 @@ class FontGlyph:
                     for y in range(self.prev_y, self.y):
                         pixel[x, y] = (pixel[x, y][0], 255 * int(pixel[x, y][1] > threshold))
             # 全部结束后，保存图片和csv到文件
-            os.system(f"mkdir -p dist/{self.project}/{self.langlist[-1]}")
+            bashcmd(f"mkdir -p dist/{self.project}/{self.langlist[-1]}")
             self.glyph.save(f"dist/{self.project}/{self.langlist[-1]}/{font}.png")
             with open(f"dist/{self.project}/{self.langlist[-1]}/{font}.csv", "w", encoding="utf-8", newline='') as file:
                 self.writer = csv.writer(file, delimiter=';')
