@@ -244,7 +244,7 @@
         "fontfile": "papyrus-px_alt.ttf",
         "fallbacksize": 32,
         "size": 32,
-        "extra_y": 8,
+        "extra_y": 12,
         "start_y": 4,
         "special": {
             "I": {
