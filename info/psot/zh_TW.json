@@ -57,7 +57,7 @@
         "size": 34,
         "fallbacksize": 32,
         "threshold": 110,
-        "extra_y": 0,
+        "extra_y": -2,
         "start_y": -2
     }
 }
