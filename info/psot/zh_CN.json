@@ -20,6 +20,7 @@
         "threshold": 128,
         "size": 12,
         "start_y": -1,
+        "start_x": 1,
         "extra_x": 3,
         "extra_y": -1
     },
@@ -27,6 +28,7 @@
         "fontfile": "fzxs12-Pixel.ttf",
         "size": 12,
         "threshold": 128,
+        "start_x": 1,
         "extra_x": 2,
         "start_y": -1,
         "extra_y": -1
