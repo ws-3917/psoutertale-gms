@@ -102,17 +102,7 @@
         "extra_x": 0,
         "extra_y": -2,
         "start_y": -2,
-        "special": {
-            ":": {
-                "start_x": 2
-            },
-            "(": {
-                "start_x": 2
-            },
-            "[": {
-                "start_x": 2
-            }
-        }
+        "special": {}
     },
     "DeterminationSans": {
         "fontfile": "DTsans.ttf",
@@ -120,54 +110,7 @@
         "extra_x": 0,
         "extra_y": -2,
         "start_y": -2,
-        "special": {
-            " ": {
-                "extra_x": -3
-            },
-            ":": {
-                "extra_x": -2,
-                "start_x": 1
-            },
-            "(": {
-                "extra_x": -2
-            },
-            "[": {
-                "extra_x": -2
-            },
-            "]": {
-                "extra_x": -2
-            },
-            ")": {
-                "extra_x": -2
-            },
-            "{": {
-                "extra_x": -2
-            },
-            "}": {
-                "extra_x": -2
-            },
-            "m": {
-                "extra_x": 1
-            },
-            "w": {
-                "extra_x": 1
-            },
-            "M": {
-                "extra_x": 1
-            },
-            "W": {
-                "extra_x": 1
-            },
-            "%": {
-                "extra_x": 1
-            },
-            "#": {
-                "extra_x": 1
-            },
-            "*": {
-                "extra_x": 1
-            }
-        }
+        "special": {}
     },
     "DiaryOfAn8BitMage": {
         "fontfile": "DiaryOfAn8BitMage.otf",
