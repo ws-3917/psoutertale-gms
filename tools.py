@@ -126,8 +126,12 @@ class FontGlyph:
         ###
 
         # 添加csv数据
-        self.csv.append((ord(ch), self.x, self.y, width, height,
-                         0, 0, width, height))
+        if self.project == 'psot':
+            self.csv.append((ord(ch), self.x, self.y, width, height,
+                            0, 0, width, height))
+        elif self.project == 'tsus':
+            self.csv.append((ord(ch), self.x, self.y, width, height,
+                            width, 0))
 
         # 移动画笔，准备下一次绘制
         self.x += width + self.rest_x
@@ -189,8 +193,12 @@ class FontGlyph:
                     for y in range(self.prev_y, self.y):
                         pixel[x, y] = (pixel[x, y][0], 255 * int(pixel[x, y][1] > threshold))
             # 全部结束后，保存图片和csv到文件
-            bashcmd(f"mkdir -p dist/{self.project}/{self.langlist[-1]}")
-            self.glyph.save(f"dist/{self.project}/{self.langlist[-1]}/{font}.png")
-            with open(f"dist/{self.project}/{self.langlist[-1]}/{font}.csv", "w", encoding="utf-8", newline='') as file:
+            bashcmd(f"mkdir -p dist/{self.project}/{self.langlist[-2]}")
+            self.glyph.save(f"dist/{self.project}/{self.langlist[-2]}/{font}.png")
+            if self.project == 'psot':
+                output_csv = f"dist/{self.project}/{self.langlist[-2]}/{font}.csv"
+            elif self.project == 'tsus':
+                output_csv = f"dist/{self.project}/{self.langlist[-2]}/glyphs_{font}.csv"
+            with open(output_csv, "w", encoding="utf-8", newline='') as file:
                 self.writer = csv.writer(file, delimiter=';')
                 self.writer.writerows(self.csv)
