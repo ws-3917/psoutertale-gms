@@ -99,7 +99,7 @@
     "fnt_main": {
         "fontfile": "DTmono.ttf",
         "size": 32,
-        "start_x": -2,
+        "start_x": -1,
         "extra_x": -2,
         "extra_y": 1,
         "special": {
@@ -111,7 +111,7 @@
             },
             ":": {
                 "extra_x": -4,
-                "start_x": 2
+                "start_x": -2
             },
             ",": {
                 "extra_x": -6
@@ -136,6 +136,27 @@
             },
             "*": {
                 "extra_x": 2
+            },
+            "(": {
+                "extra_x": -2,
+                "start_x": -2
+            },
+            "[": {
+                "extra_x": -2,
+                "start_x": -2
+            },
+            "]": {
+                "extra_x": -2
+            },
+            ")": {
+                "extra_x": -2
+            },
+            "{": {
+                "extra_x": -2,
+                "start_x": -2
+            },
+            "}": {
+                "extra_x": -2
             }
         }
     },
@@ -146,7 +167,7 @@
         "extra_y": 0,
         "special": {
             ":": {
-                "start_x": 2
+                "start_x": 1
             },
             "(": {
                 "start_x": 2
@@ -158,6 +179,14 @@
                 "start_x": 2
             }
         }
+    },
+    "fnt_dotumche_sm": {
+        "fontfile": "fusion-pixel-10px-latin.ttf",
+        "size": 10,
+        "extra_x": -4,
+        "extra_y": 2,
+        "fallbacksize": 8,
+        "special": {}
     },
     "fnt_dotumche": {
         "fontfile": "dotumche-px.ttf",

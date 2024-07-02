@@ -39,6 +39,16 @@
         "f": 1,
         "g": 1
     },
+    "fnt_dotumche_sm": {
+        "name": "Custom8BitOperatorJVE",
+        "a": 0,
+        "b": false,
+        "c": false,
+        "d": 1,
+        "e": 0,
+        "f": 1,
+        "g": 1
+    },
     "fnt_mars": {
         "name": "CustomMarsNeedsCunnilingus",
         "a": 0,

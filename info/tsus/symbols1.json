@@ -22,6 +22,7 @@
         "start_y": 4,
         "extra_x": 3,
         "extra_y": 4,
+        "start_x": 3,
         "special": {
             "∞": {
                 "extra_x": 4,
@@ -89,6 +90,14 @@
             }
         }
     },
+    "fnt_dotumche_sm": {
+        "fontfile": "fusion-pixel-10px-zh_hans.ttf",
+        "size": 10,
+        "extra_x": 0,
+        "extra_y": 2,
+        "fallbacksize": 8,
+        "special": {}
+    },
     "fnt_dotumche": {
         "fontfile": "fzxs14.ttf",
         "size": 14,
@@ -107,9 +116,9 @@
     "fnt_papyrus": {
         "fontfile": "fzkt_GBK.ttf",
         "fallbacksize": 32,
-        "size": 36,
+        "size": 34,
         "threshold": 120,
-        "extra_y": -4,
-        "start_y": -4
+        "extra_y": 0,
+        "start_y": 0
     }
 }
