@@ -102,18 +102,10 @@
         "extra_x": 0,
         "extra_y": -2,
         "start_y": -2,
+        "start_x": -1,
         "special": {
             ":": {
                 "start_x": 2
-            },
-            "(": {
-                "start_x": 0
-            },
-            "[": {
-                "start_x": 0
-            },
-            "{": {
-                "start_x": 0
             }
         }
     },
