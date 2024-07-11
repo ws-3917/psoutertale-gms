@@ -20,7 +20,8 @@
         "size": 12,
         "extra_x": 3,
         "extra_y": -1,
-        "start_y": -1
+        "start_y": -1,
+        "start_x": 1
     },
     "DeterminationSans": {
         "fontfile": "JF-Dot-Shinonome12.ttf",
