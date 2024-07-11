@@ -160,7 +160,8 @@
                 "extra_x": 1
             },
             "*": {
-                "extra_x": 1
+                "extra_x": 1,
+                "start_x": 1
             }
         }
     },
