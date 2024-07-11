@@ -105,13 +105,10 @@
     "DeterminationMono": {
         "fontfile": "DTmono.ttf",
         "size": 16,
-        "extra_y": -3,
+        "extra_y": -2,
         "start_y": -2,
         "special": {
             ":": {
-                "start_x": 1
-            },
-            "*": {
                 "start_x": 1
             }
         }
