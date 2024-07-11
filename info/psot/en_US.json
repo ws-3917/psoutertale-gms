@@ -9,11 +9,14 @@
         "start_y": -3,
         "special": {
             "i": {
-                "start_x": 1,
+                "start_x": 2,
                 "extra_x": -3
             },
+            "j": {
+                "start_x": 1
+            },
             "l": {
-                "start_x": 1,
+                "start_x": 2,
                 "extra_x": -3
             },
             "m": {
@@ -23,7 +26,7 @@
                 "extra_x": 1
             },
             "@": {
-                "extra_x": 4
+                "extra_x": 6
             },
             "A": {
                 "extra_x": 1
@@ -37,20 +40,23 @@
             "H": {
                 "extra_x": 1
             },
+            "I": {
+                "extra_x": -2
+            },
             "M": {
-                "extra_x": 3
+                "extra_x": 5
             },
             "N": {
                 "extra_x": 2
             },
             "O": {
-                "extra_x": 3
+                "extra_x": 5
             },
             "P": {
-                "extra_x": -1
+                "extra_x": -2
             },
             "Q": {
-                "extra_x": 4
+                "extra_x": 6
             },
             "T": {
                 "extra_x": 1
@@ -62,7 +68,7 @@
                 "extra_x": 1
             },
             "W": {
-                "extra_x": 4
+                "extra_x": 6
             },
             "X": {
                 "extra_x": 2
