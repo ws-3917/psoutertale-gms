@@ -41,7 +41,13 @@
                 "extra_x": 1
             },
             "I": {
-                "extra_x": -4
+                "extra_x": -2
+            },
+            "J": {
+                "extra_x": 2
+            },
+            "L": {
+                "extra_x": -1
             },
             "M": {
                 "extra_x": 6
@@ -53,7 +59,7 @@
                 "extra_x": 5
             },
             "P": {
-                "extra_x": -5
+                "extra_x": -4
             },
             "Q": {
                 "extra_x": 6
@@ -65,10 +71,10 @@
                 "extra_x": 2
             },
             "V": {
-                "extra_x": 2
+                "extra_x": 3
             },
             "W": {
-                "extra_x": 8
+                "extra_x": 10
             },
             "X": {
                 "extra_x": 4
@@ -245,22 +251,22 @@
                 "start_x": -1
             },
             "B": {
-                "extra_x": 1
+                "extra_x": 2
             },
             "D": {
-                "extra_x": 1
+                "extra_x": 2
             },
             "G": {
-                "extra_x": 1
+                "extra_x": 2
             },
             "M": {
-                "extra_x": 1
+                "extra_x": 2
             },
             "S": {
-                "extra_x": 1
+                "extra_x": 2
             },
             "W": {
-                "extra_x": 1
+                "extra_x": 2
             }
         }
     }
