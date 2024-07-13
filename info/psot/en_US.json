@@ -178,6 +178,7 @@
     "DiaryOfAn8BitMage": {
         "fontfile": "DiaryOfAn8BitMage.otf",
         "size": 18,
+        "start_x": 1,
         "special": {
             "1": {
                 "extra_x": -1
