@@ -4,7 +4,7 @@
         "size": 32,
         "fallbacksize": 32,
         "extra_x": -1,
-        "start_x": 4,
+        "start_x": 6,
         "extra_y": -3,
         "start_y": -3,
         "special": {
@@ -26,7 +26,7 @@
                 "extra_x": 1
             },
             "@": {
-                "extra_x": 6
+                "extra_x": 10
             },
             "A": {
                 "extra_x": 2
@@ -178,7 +178,7 @@
     "DiaryOfAn8BitMage": {
         "fontfile": "DiaryOfAn8BitMage.otf",
         "size": 18,
-        "start_x": 1,
+        "start_x": 2,
         "special": {
             "1": {
                 "extra_x": -1
@@ -226,7 +226,7 @@
     "MarsNeedsCunnilingus": {
         "fontfile": "mars-px.ttf",
         "size": 24,
-        "start_x": 2,
+        "start_x": 3,
         "start_y": -2,
         "special": {
             " ": {
@@ -254,9 +254,12 @@
         "fallbacksize": 32,
         "size": 32,
         "extra_y": 8,
-        "start_x": 2,
+        "start_x": 4,
         "start_y": 4,
         "special": {
+            "@": {
+                "extra_x": 4
+            },
             "A": {
                 "extra_x": 2
             },

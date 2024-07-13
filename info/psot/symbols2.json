@@ -26,22 +26,6 @@
             "，": {
                 "start_y": 2
             },
-            "“": {
-                "start_x": -4,
-                "extra_x": -5
-            },
-            "”": {
-                "start_x": -2,
-                "extra_x": -5
-            },
-            "‘": {
-                "start_x": -7,
-                "extra_x": -9
-            },
-            "’": {
-                "start_x": -2,
-                "extra_x": -9
-            },
             "（": {
                 "start_x": 1,
                 "extra_x": -1
@@ -62,22 +46,6 @@
         "special": {
             "，": {
                 "start_y": 2
-            },
-            "“": {
-                "start_x": -4,
-                "extra_x": -5
-            },
-            "”": {
-                "start_x": -2,
-                "extra_x": -5
-            },
-            "‘": {
-                "start_x": -7,
-                "extra_x": -9
-            },
-            "’": {
-                "start_x": -2,
-                "extra_x": -9
             },
             "（": {
                 "start_x": 1,
