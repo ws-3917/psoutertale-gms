@@ -260,7 +260,7 @@
         "fallbacksize": 32,
         "size": 32,
         "extra_y": 8,
-        "start_x": 4,
+        "start_x": 2,
         "start_y": 4,
         "special": {
             "@": {
