@@ -100,8 +100,7 @@
         "fontfile": "crypt.ttf",
         "size": 5,
         "start_y": 1,
-        "extra_y": 1,
-        "start_x": 1
+        "extra_y": 1
     },
     "DeterminationMono": {
         "fontfile": "DTmono.ttf",
@@ -179,7 +178,6 @@
     "DiaryOfAn8BitMage": {
         "fontfile": "DiaryOfAn8BitMage.otf",
         "size": 18,
-        "start_x": 1,
         "special": {
             "1": {
                 "extra_x": -1
@@ -228,7 +226,6 @@
         "fontfile": "mars-px.ttf",
         "size": 24,
         "start_y": -2,
-        "start_x": 1,
         "special": {
             " ": {
                 "extra_x": -4
@@ -256,7 +253,6 @@
         "size": 32,
         "extra_y": 8,
         "start_y": 4,
-        "start_x": 1,
         "special": {
             "A": {
                 "extra_x": 2
