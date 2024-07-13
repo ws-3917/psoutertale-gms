@@ -61,8 +61,8 @@
         "extra_y": -1,
         "special": {
             "∞": {
-                "extra_x": 4,
-                "start_x": 2,
+                "extra_x": 6,
+                "start_x": 3,
                 "start_y": 2
             },
             "。": {
