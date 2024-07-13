@@ -6,6 +6,7 @@
         "extra_y": -2,
         "start_y": -2,
         "extra_x": 2,
+        "start_x": 1,
         "threshold": 145
     },
     "CryptOfTomorrow": {
@@ -13,7 +14,8 @@
         "threshold": 80,
         "size": 8,
         "fallbacksize": 8,
-        "start_y": -1
+        "start_y": -1,
+        "start_x": 1
     },
     "DeterminationMono": {
         "fontfile": "fzxs12-Pixel.ttf",
@@ -21,6 +23,7 @@
         "size": 12,
         "start_y": -1,
         "extra_x": 3,
+        "start_x": 1,
         "extra_y": -1,
         "special": {
             "∞": {
@@ -58,6 +61,7 @@
         "threshold": 128,
         "extra_x": 2,
         "start_y": -1,
+        "start_x": 1,
         "extra_y": -1,
         "special": {
             "∞": {
@@ -93,7 +97,8 @@
         "fontfile": "fusion-pixel-8px-zh_hans.ttf",
         "threshold": 80,
         "size": 16,
-        "start_y": -1
+        "start_y": -1,
+        "start_x": 1
     },
     "DotumChe": {
         "fontfile": "fzxs14.ttf",
@@ -101,6 +106,7 @@
         "extra_x": 6,
         "start_y": 2,
         "extra_y": 2,
+        "start_x": 1,
         "threshold": 120
     },
     "MarsNeedsCunnilingus": {
@@ -108,7 +114,8 @@
         "threshold": 80,
         "size": 16,
         "start_y": -1,
-        "extra_y": 0
+        "extra_y": 0,
+        "start_x": 1
     },
     "Papyrus": {
         "fontfile": "fzkt_GBK.ttf",
@@ -116,6 +123,7 @@
         "size": 36,
         "threshold": 120,
         "extra_y": -4,
-        "start_y": -4
+        "start_y": -4,
+        "start_x": 1
     }
 }
