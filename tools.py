@@ -189,7 +189,7 @@ class FontGlyph:
                     if status == 'yep':
                         self.addfont(ch, fontname=font)    # addfont有csv的添加
                     elif status == 'fallback':
-                        print(colored(f"  ! 使用备用字体: {ch}", "magenta"))
+                        #print(colored(f"  ! 使用备用字体: {ch}", "magenta"))
                         self.addfont(ch, fallback=True, fontname=font)
                     elif status == 'nope':
                         if ch != '\n':
