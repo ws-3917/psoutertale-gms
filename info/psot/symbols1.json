@@ -25,7 +25,7 @@
         "extra_y": -1,
         "special": {
             "∞": {
-                "extra_x": 9,
+                "extra_x": 10,
                 "start_x": 0,
                 "start_y": 1
             },
@@ -60,7 +60,7 @@
         "extra_y": -1,
         "special": {
             "∞": {
-                "extra_x": 10,
+                "extra_x": 11,
                 "start_x": 0,
                 "start_y": 1
             },
