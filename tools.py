@@ -30,6 +30,11 @@ class FontGlyph:
         # 读取fallback字体信息
         with open(f"info/{self.project}/fallback.json", encoding="utf-8") as file:
             self.fallbackinfo = dict(json.loads(file.read()))
+        
+        # 0714 - special特殊字符列表（手动绘制字形）
+        specialChar = os.listdir('special')
+        self.special_char_list = [os.path.splitext(file)[0]
+                                    for file in specialChar if file.lower().endswith('.png')]
     
     # 获取字体大小
     def loadsize(self, font) -> None:
@@ -110,8 +115,15 @@ class FontGlyph:
             self.y += self.height + self.rest_y
         
         # 开始绘制
-        self.drawtool.text((self.x + start_x, self.y + start_y),
-                           ch, fill=(255, 255), font=font)
+        # 0714 - 特殊字形手动添加
+        if ch in self.special_char_list:
+            symbol = Image.open(f"special/{ch}.png")
+            resize_factor = max(round(self.cfg["size"] / 16.0), 1)
+            symbol = symbol.resize((resize_factor * symbol.size[0], resize_factor * symbol.size[1]), Image.Resampling.NEAREST)
+            self.glyph.paste(symbol, (self.x + start_x, self.y + start_y))
+        else:
+            self.drawtool.text((self.x + start_x, self.y + start_y),
+                                ch, fill=(255, 255), font=font)
         # test
         # testglyph = Image.new("LA", (width, height), 0)
         # ImageDraw.Draw(testglyph).text((start_x, start_y), ch, fill=(0, 255), font=font)
