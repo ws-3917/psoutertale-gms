@@ -19,6 +19,7 @@
         "fontfile": "fzxs12-Pixel.ttf",
         "threshold": 128,
         "size": 12,
+        "start_x": 1,
         "start_y": -1,
         "extra_x": 3,
         "extra_y": -1,
@@ -37,6 +38,7 @@
     "DeterminationSans": {
         "fontfile": "fzxs12-Pixel.ttf",
         "size": 12,
+        "start_x": 1,
         "threshold": 128,
         "extra_x": 2,
         "start_y": -1,

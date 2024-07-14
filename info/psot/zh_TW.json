@@ -21,6 +21,7 @@
         "size": 12,
         "extra_x": 3,
         "extra_y": -1,
+        "start_x": 1,
         "start_y": -1
     },
     "DeterminationSans": {
@@ -29,6 +30,7 @@
         "size": 12,
         "extra_x": 2,
         "extra_y": -1,
+        "start_x": 1,
         "start_y": -1
     },
     "DiaryOfAn8BitMage": {
