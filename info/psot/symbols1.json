@@ -90,6 +90,7 @@
         "threshold": 80,
         "size": 16,
         "start_y": -1,
+        "extra_x": 1,
         "special": {
             "∞": {
                 "extra_x": 8,
