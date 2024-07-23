@@ -1,37 +1,36 @@
 {
     "en_US": {
         "fontfile": "unifont.otf",
-        "size": 16,
         "start_y": 0,
         "start_x": 0
     },
     "zh_CN": {
         "fontfile": "unifont.otf",
-        "size": 16,
         "start_y": 0,
         "start_x": 0
     },
     "zh_TW": {
         "fontfile": "unifont_jp.otf",
-        "size": 16,
         "start_y": 0,
         "start_x": 0
     },
     "ja_JP": {
         "fontfile": "unifont_jp.otf",
-        "size": 16,
         "start_y": 0,
         "start_x": 0
     },
     "symbols1": {
         "fontfile": "unifont.otf",
-        "size": 16,
         "start_y": 0,
         "start_x": 0
     },
     "symbols2": {
         "fontfile": "unifont.otf",
-        "size": 16,
+        "start_y": 0,
+        "start_x": 0
+    },
+    "xx_XX": {
+        "fontfile": "unifont_jp.otf",
         "start_y": 0,
         "start_x": 0
     }

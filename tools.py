@@ -83,7 +83,7 @@ class FontGlyph:
         else:
             return 'nope'
     
-    def addfont(self, ch, fontname, fallback=False) -> None:
+    def addfont(self, ch, fallback=False) -> None:
         # 先获取基本信息
         if fallback:
             #cfg = self.fallbackcfg
@@ -173,28 +173,40 @@ class FontGlyph:
                     self.encfg = self.cfg
                     self.enfont = self.font
                 self.fallbackcfg = self.fallbackinfo.get(lang)
+                self.fallbackcfg["fontfile"] = self.cfg.get("fallback", self.fallbackcfg["fontfile"])
                 if self.fallbackcfg:
                     self.fallbackfont = ImageFont.truetype(f"fonts/{lang}/" + self.fallbackcfg["fontfile"], 
-                                                           self.cfg.get("fallbacksize", self.fallbackcfg["size"]))
+                                                           self.cfg.get("fallbacksize", self.cfg["size"]))
                     self.fallbackfail = Image.new("1", (self.width, self.height), 0)
-                    ImageDraw.Draw(self.fallbackfail).text((0, 0), "𘏚", fill=1, font=self.fallbackfont)
+                    ImageDraw.Draw(self.fallbackfail).text((0, 0), "𰻞", fill=1, font=self.fallbackfont)
                 
                 # 生成绘制失败字符图
                 self.fail = Image.new("1", (self.width, self.height), 0)
-                ImageDraw.Draw(self.fail).text((0, 0), "𘏚", fill=1, font=self.font)
+                ImageDraw.Draw(self.fail).text((0, 0), "𰻞", fill=1, font=self.font)
                 # 开始逐一绘制字符
+                self.errorcount = 0
                 for ch in self.charset[lang]:
                     # 检查字符是否可用
                     status = self.check(ch) # 返回值有 yep, nope, fallback
                     if status == 'yep':
-                        self.addfont(ch, fontname=font)    # addfont有csv的添加
+                        self.addfont(ch)    # addfont有csv的添加
                     elif status == 'fallback':
-                        #print(colored(f"  ! 使用备用字体: {ch}", "magenta"))
-                        self.addfont(ch, fallback=True, fontname=font)
+                        print(colored(f"{ch}", "magenta"), end='')
+                        self.errorcount += 1
+                        if self.errorcount % 50 == 0:
+                            print()
+                        self.addfont(ch, fallback=True)
                     elif status == 'nope':
                         if ch != '\n':
-                            print(colored(f"  ! 无法绘制: {ch}", "red"))
+                            self.errorcount += 1
+                            print(colored(f"{ch}", "red"), end='')
+                            if self.errorcount % 50 == 0:
+                                print()
                         continue
+                    
+                if self.errorcount > 0:
+                    self.errorcount = 0
+                    print()
                 # 完毕后调整坐标位
                 self.x = 0
                 self.y += self.height + self.rest_y   # 此处和之前算height的+rest都是为了避免重叠打的补丁
@@ -205,12 +217,14 @@ class FontGlyph:
                     for y in range(self.prev_y, self.y):
                         pixel[x, y] = (pixel[x, y][0], 255 * int(pixel[x, y][1] > threshold))
             # 全部结束后，保存图片和csv到文件
-            bashcmd(f"mkdir -p dist/{self.project}/{self.langlist[-2]}")
-            self.glyph.save(f"dist/{self.project}/{self.langlist[-2]}/{font}.png")
+            ind = -len(self.langlist) if len(self.langlist) <= 1 else -2
+                
+            bashcmd(f"mkdir -p dist/{self.project}/{self.langlist[ind]}")
+            self.glyph.save(f"dist/{self.project}/{self.langlist[ind]}/{font}.png")
             if self.project == 'psot':
-                output_csv = f"dist/{self.project}/{self.langlist[-2]}/{font}.csv"
+                output_csv = f"dist/{self.project}/{self.langlist[ind]}/{font}.csv"
             elif self.project == 'tsus':
-                output_csv = f"dist/{self.project}/{self.langlist[-2]}/glyphs_{font}.csv"
+                output_csv = f"dist/{self.project}/{self.langlist[ind]}/glyphs_{font}.csv"
             with open(output_csv, "w", encoding="utf-8", newline='') as file:
                 self.writer = csv.writer(file, delimiter=';')
                 self.writer.writerows(self.csv)

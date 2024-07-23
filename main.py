@@ -7,6 +7,7 @@ def main():
     tools.FontGlyph(project, ['en_US', 'symbols1', "zh_CN", 'symbols2']).task()
     tools.FontGlyph(project, ['en_US', 'symbols1', "zh_TW", 'symbols2']).task()
     tools.FontGlyph(project, ['en_US', 'symbols1', "ja_JP", 'symbols2']).task()
+    # tools.FontGlyph(project, ['xx_XX']).task()
     print("--- 成功生成所有字图！")
 
 if __name__ == '__main__':

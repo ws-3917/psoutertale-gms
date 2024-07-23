@@ -1,8 +1,8 @@
 {
     "ComicSans": {
         "fontfile": "HKFY_W7_sans.ttf",
+        "fallback": "fzse_GBK.ttf",
         "size": 28,
-        "fallbacksize": 32,
         "extra_y": -2,
         "start_y": -2,
         "extra_x": 2,
@@ -10,6 +10,7 @@
     },
     "CryptOfTomorrow": {
         "fontfile": "fusion-pixel-8px-zh_hant.ttf",
+        "fallback": "fusion-pixel-8px-zh_hans.ttf",
         "threshold": 80,
         "size": 8,
         "fallbacksize": 8,
@@ -42,6 +43,7 @@
     },
     "DotumChe": {
         "fontfile": "WQY_BS_14px.ttf",
+        "fallback": "fzxs14.ttf",
         "size": 15,
         "extra_x": 6,
         "start_y": 2,
@@ -50,6 +52,7 @@
     },
     "MarsNeedsCunnilingus": {
         "fontfile": "fusion-pixel-8px-zh_hant.ttf",
+        "fallback": "fusion-pixel-8px-zh_hans.ttf",
         "threshold": 80,
         "size": 16,
         "start_y": -1,
@@ -57,8 +60,8 @@
     },
     "Papyrus": {
         "fontfile": "QSSXT_papy.ttf",
+        "fallback": "fzkt_GBK.ttf",
         "size": 34,
-        "fallbacksize": 32,
         "threshold": 110,
         "extra_y": -2,
         "start_y": -2
