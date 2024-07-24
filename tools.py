@@ -32,7 +32,7 @@ class FontGlyph:
             self.fallbackinfo = dict(json.loads(file.read()))
         
         # 0714 - special特殊字符列表（手动绘制字形）
-        specialChar = os.listdir('special')
+        specialChar = os.listdir(f'special/{self.fontlist[0]}')
         self.special_char_list = [os.path.splitext(file)[0]
                                     for file in specialChar if file.lower().endswith('.png')]
     
@@ -83,7 +83,7 @@ class FontGlyph:
         else:
             return 'nope'
     
-    def addfont(self, ch, fallback=False) -> None:
+    def addfont(self, ch, fontname, fallback=False) -> None:
         # 先获取基本信息
         if fallback:
             #cfg = self.fallbackcfg
@@ -116,11 +116,13 @@ class FontGlyph:
         
         # 开始绘制
         # 0714 - 特殊字形手动添加
-        if ch in self.special_char_list:
-            symbol = Image.open(f"special/{ch}.png")
-            resize_factor = max(round(self.cfg["size"] / 16.0), 1)
+        ch_code = hex(ord(ch))
+        if ch_code in self.special_char_list:
+            symbol = Image.open(f"special/{fontname}/{ch_code}.png")
+            resize_factor = int(self.cfg.get("special_factor", max(round(self.cfg["size"] / 16.0), 1)))
+            special_y = int(self.cfg.get("special_y", 0))
             symbol = symbol.resize((resize_factor * symbol.size[0], resize_factor * symbol.size[1]), Image.Resampling.NEAREST)
-            self.glyph.paste(symbol, (self.x + start_x, self.y + start_y))
+            self.glyph.paste(symbol, (self.x + start_x, self.y + start_y + special_y))
         else:
             self.drawtool.text((self.x + start_x, self.y + start_y),
                                 ch, fill=(255, 255), font=font)
@@ -151,20 +153,20 @@ class FontGlyph:
     # 主任务：生成字图
     def task(self) -> None:
         # 对于每个字体
-        for font in self.fontlist:
+        for fontname in self.fontlist:
             # 创建新字图
-            print(colored(f"--> {font}", "blue"))
-            self.loadsize(font)
-            self.glyph = Image.new('LA', (self.totalwidth, self.totalheight(font)), (0, 0))
+            print(colored(f"--> {fontname}", "blue"))
+            self.loadsize(fontname)
+            self.glyph = Image.new('LA', (self.totalwidth, self.totalheight(fontname)), (0, 0))
             self.drawtool = ImageDraw.Draw(self.glyph)
             self.x = 0
             self.prev_y = self.y = 0
-            self.csv = [tuple(self.baseinfo[font].values())]
+            self.csv = [tuple(self.baseinfo[fontname].values())]
             # 针对每种语言
             for lang in self.langlist:
                 # 加载配置文件和字符集
                 print(colored(f" -> {lang}", "yellow"))
-                self.cfg = self.fontinfo[lang][font]
+                self.cfg = self.fontinfo[lang][fontname]
                 (self.width, self.height) = self.fontsize[lang]
                 self.width += self.cfg.get("extra_x", 0)
                 self.height += self.cfg.get("extra_y", 0)
@@ -189,13 +191,13 @@ class FontGlyph:
                     # 检查字符是否可用
                     status = self.check(ch) # 返回值有 yep, nope, fallback
                     if status == 'yep':
-                        self.addfont(ch)    # addfont有csv的添加
+                        self.addfont(ch, fontname)    # addfont有csv的添加
                     elif status == 'fallback':
                         print(colored(f"{ch}", "magenta"), end='')
                         self.errorcount += 1
                         if self.errorcount % 50 == 0:
                             print()
-                        self.addfont(ch, fallback=True)
+                        self.addfont(ch, fontname, fallback=True)
                     elif status == 'nope':
                         if ch != '\n':
                             self.errorcount += 1
@@ -220,11 +222,11 @@ class FontGlyph:
             ind = -len(self.langlist) if len(self.langlist) <= 1 else -2
                 
             bashcmd(f"mkdir -p dist/{self.project}/{self.langlist[ind]}")
-            self.glyph.save(f"dist/{self.project}/{self.langlist[ind]}/{font}.png")
+            self.glyph.save(f"dist/{self.project}/{self.langlist[ind]}/{fontname}.png")
             if self.project == 'psot':
-                output_csv = f"dist/{self.project}/{self.langlist[ind]}/{font}.csv"
+                output_csv = f"dist/{self.project}/{self.langlist[ind]}/{fontname}.csv"
             elif self.project == 'tsus':
-                output_csv = f"dist/{self.project}/{self.langlist[ind]}/glyphs_{font}.csv"
+                output_csv = f"dist/{self.project}/{self.langlist[ind]}/glyphs_{fontname}.csv"
             with open(output_csv, "w", encoding="utf-8", newline='') as file:
                 self.writer = csv.writer(file, delimiter=';')
                 self.writer.writerows(self.csv)
