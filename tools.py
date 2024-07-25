@@ -11,8 +11,8 @@ class FontGlyph:
         self.project = project
         self.langlist = langlist
         self.totalwidth = totalwidth
-        self.rest_y = 3   # 松弛间隔，防止行之间重叠
-        self.rest_x = 3   # 横向间隔
+        self.rest_y = 1   # 松弛间隔，防止行之间重叠
+        self.rest_x = 1   # 横向间隔
         # 根据project读取对应路径下的base,获取字体列表和基本信息
         with open(f"info/{self.project}/base.json", encoding="utf-8") as file:
             self.baseinfo = dict(json.loads(file.read()))
@@ -112,7 +112,7 @@ class FontGlyph:
         # 开始绘制
         # 0714 - 特殊字形手动添加
         ch_code = hex(ord(ch))
-        if ch_code in self.special_char_list:
+        if ch_code in self.special_char_list and os.path.exists(f"special/{fontname}/{ch_code}.png"):
             symbol = Image.open(f"special/{fontname}/{ch_code}.png")
             resize_factor = int(self.cfg.get("special_factor", max(round(self.cfg["size"] / 16.0), 1)))
             special_y = int(self.cfg.get("special_y", 0))

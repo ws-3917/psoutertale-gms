@@ -8,8 +8,8 @@
         },
         "extra_x": -1,
         "start_x": 3,
-        "extra_y": -3,
-        "start_y": -3,
+        "extra_y": 0,
+        "start_y": 0,
         "special": {
             "d": {
                 "extra_x": 1
@@ -104,7 +104,7 @@
                 "extra_x": 4
             },
             "%": {
-                "extra_x": 4
+                "extra_x": 6
             },
             ".": {
                 "start_x": 1
