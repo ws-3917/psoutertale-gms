@@ -175,16 +175,16 @@ class FontGlyph:
                     self.encfg = self.cfg
                     self.enfont = self.font
                 self.fallbackcfg = self.fallbackinfo.get(lang)
-                self.fallbackcfg["fontfile"] = self.cfg.get("fallback", self.fallbackcfg["fontfile"])
+                self.fallbackname = self.cfg.get("fallback", self.fallbackcfg["fontfile"])
                 if self.fallbackcfg:
-                    self.fallbackfont = ImageFont.truetype(f"fonts/{lang}/" + self.fallbackcfg["fontfile"], 
+                    self.fallbackfont = ImageFont.truetype(f"fonts/{lang}/" + self.fallbackname, 
                                                            self.cfg.get("fallbacksize", self.cfg["size"]))
                     self.fallbackfail = Image.new("1", (self.width, self.height), 0)
-                    ImageDraw.Draw(self.fallbackfail).text((0, 0), "𰻞", fill=1, font=self.fallbackfont)
+                    ImageDraw.Draw(self.fallbackfail).text((0, 0), "𪾰", fill=1, font=self.fallbackfont)
                 
                 # 生成绘制失败字符图
                 self.fail = Image.new("1", (self.width, self.height), 0)
-                ImageDraw.Draw(self.fail).text((0, 0), "𰻞", fill=1, font=self.font)
+                ImageDraw.Draw(self.fail).text((0, 0), "𪾰", fill=1, font=self.font)
                 # 开始逐一绘制字符
                 self.errorcount = 0
                 for ch in self.charset[lang]:
@@ -193,10 +193,10 @@ class FontGlyph:
                     if status == 'yep':
                         self.addfont(ch, fontname)    # addfont有csv的添加
                     elif status == 'fallback':
-                        print(colored(f"{ch}", "magenta"), end='')
-                        self.errorcount += 1
-                        if self.errorcount % 50 == 0:
-                            print()
+                        # print(colored(f"{ch}", "magenta"), end='')
+                        # self.errorcount += 1
+                        # if self.errorcount % 50 == 0:
+                        #     print()
                         self.addfont(ch, fontname, fallback=True)
                     elif status == 'nope':
                         if ch != '\n':

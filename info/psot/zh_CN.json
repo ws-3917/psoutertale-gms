@@ -10,7 +10,6 @@
     },
     "CryptOfTomorrow": {
         "fontfile": "fusion-pixel-8px-zh_hans.ttf",
-        "fallback": "fusion-pixel-8px-zh_hant.ttf",
         "threshold": 80,
         "size": 8,
         "fallbacksize": 8,
@@ -36,7 +35,6 @@
     },
     "DiaryOfAn8BitMage": {
         "fontfile": "fusion-pixel-8px-zh_hans.ttf",
-        "fallback": "fusion-pixel-8px-zh_hant.ttf",
         "threshold": 80,
         "size": 16,
         "start_y": -1,
@@ -53,7 +51,6 @@
     },
     "MarsNeedsCunnilingus": {
         "fontfile": "fusion-pixel-8px-zh_hans.ttf",
-        "fallback": "fusion-pixel-8px-zh_hant.ttf",
         "threshold": 80,
         "size": 16,
         "start_y": -1,
@@ -61,7 +58,7 @@
     },
     "Papyrus": {
         "fontfile": "fzkt_GBK.ttf",
-        "fallback": "QSSXT_papy.ttf",
+        "fallbacksize": 32,
         "size": 34,
         "threshold": 155,
         "extra_y": -4,

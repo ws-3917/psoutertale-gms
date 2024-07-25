@@ -1,16 +1,15 @@
 {
     "ComicSans": {
-        "fontfile": "HKFY_W7_sans.ttf",
-        "fallback": "fzse_GBK.ttf",
+        "fontfile": "fzse_GBK.ttf",
+        "fallback": "HKFY_W7_sans.ttf",
         "size": 28,
-        "extra_y": -2,
+        "extra_y": -4,
         "start_y": -2,
         "extra_x": 2,
-        "threshold": 170
+        "threshold": 165
     },
     "CryptOfTomorrow": {
         "fontfile": "fusion-pixel-8px-zh_hant.ttf",
-        "fallback": "fusion-pixel-8px-zh_hans.ttf",
         "threshold": 80,
         "size": 8,
         "fallbacksize": 8,
@@ -52,7 +51,6 @@
     },
     "MarsNeedsCunnilingus": {
         "fontfile": "fusion-pixel-8px-zh_hant.ttf",
-        "fallback": "fusion-pixel-8px-zh_hans.ttf",
         "threshold": 80,
         "size": 16,
         "start_y": -1,
@@ -60,10 +58,11 @@
     },
     "Papyrus": {
         "fontfile": "fzkt_GBK.ttf",
-        "fallback": "QSSXT_papy.ttf",
+        "fallbacksize": 32,
         "size": 34,
-        "threshold": 110,
-        "extra_y": -2,
-        "start_y": -2
+        "threshold": 155,
+        "extra_y": -4,
+        "start_x": -2,
+        "start_y": -4
     }
 }
