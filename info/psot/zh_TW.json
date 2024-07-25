@@ -4,11 +4,11 @@
         "fallback": {
             "fontfile": "HKFY_W7_sans.ttf",
             "size": 28,
-            "start_y": 1
+            "start_y": -1
         },
         "size": 28,
-        "extra_y": 0,
-        "start_y": 0,
+        "extra_y": -2,
+        "start_y": -2,
         "extra_x": 2,
         "threshold": 165
     },

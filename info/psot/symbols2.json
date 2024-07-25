@@ -3,8 +3,8 @@
         "fontfile": "HAPPYRUIKAKYOHKAN-07.TTF",
         "fallbacksize": 32,
         "size": 28,
-        "extra_y": 0,
-        "start_y": 0,
+        "extra_y": -2,
+        "start_y": -2,
         "extra_x": 2,
         "threshold": 145
     },
@@ -70,7 +70,7 @@
         "fallbacksize": 32,
         "size": 36,
         "threshold": 120,
-        "extra_y": -4,
-        "start_y": -4
+        "extra_y": 0,
+        "start_y": 0
     }
 }
