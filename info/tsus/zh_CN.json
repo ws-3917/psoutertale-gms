@@ -1,6 +1,6 @@
 {
     "fnt_sans": {
-        "fontfile": "fzse_GBK.ttf",
+        "fontfile": "fzse-plus.ttf",
         "size": 28,
         "fallbacksize": 32,
         "extra_y": -2,

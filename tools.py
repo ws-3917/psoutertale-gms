@@ -27,10 +27,6 @@ class FontGlyph:
             with open(f"charset/{lang}.txt", encoding="utf-8") as file:
                 self.charset[lang] = file.read()
         
-        # 读取fallback字体信息
-        with open(f"info/{self.project}/fallback.json", encoding="utf-8") as file:
-            self.fallbackinfo = dict(json.loads(file.read()))
-        
         # 0714 - special特殊字符列表（手动绘制字形）
         specialChar = os.listdir(f'special/{self.fontlist[0]}')
         self.special_char_list = [os.path.splitext(file)[0]
@@ -42,7 +38,7 @@ class FontGlyph:
         testfont = ["A", "g", "赢"]     # 用来确定字体实际大小的测试用汉字
         for lang in self.langlist:
             fontobj = ImageFont.truetype(
-                f"fonts/{lang}/" + self.fontinfo[lang][font]["fontfile"], 
+                f"fonts/" + self.fontinfo[lang][font]["fontfile"], 
                 self.fontinfo[lang][font]["size"]
             )
             self.fontsize[lang] = (
@@ -63,7 +59,8 @@ class FontGlyph:
 
     def check(self, ch) -> str:
         # 特殊字符直接放行或跳过
-        if ch in [' ', '　']:
+        ch_code = hex(ord(ch))
+        if ch in [' ', '　'] or ch_code in self.special_char_list:
             return 'yep'
         if ch == '\n':
             return 'nope'
@@ -74,29 +71,27 @@ class FontGlyph:
         if testglyph != self.fail:
             return 'yep'
         # 尝试使用fallback
-        elif self.fallbackcfg:
+        else:
             ImageDraw.Draw(testglyph).text((0, 0), ch, fill=1, font=self.fallbackfont)
             if testglyph != self.fallbackfail:
                 return 'fallback'
             else:
                 return 'nope'
-        else:
-            return 'nope'
     
     def addfont(self, ch, fontname, fallback=False) -> None:
         # 先获取基本信息
         if fallback:
-            #cfg = self.fallbackcfg
+            # cfg = self.fallbackcfg
             font = self.fallbackfont
-        # elif ord(ch) > 0xfee0:
-        #     cfg = self.encfg
-        #     font = self.enfont
         else:
             font = self.font
         
         cfg = self.cfg
         start_x = cfg.get("start_x", 0)
         start_y = cfg.get("start_y", 0)
+        if fallback:
+            start_x = self.fallbackcfg.get("start_x", start_x)
+            start_y = self.fallbackcfg.get("start_y", start_y)
         width = self.width
         height = self.height
 
@@ -170,15 +165,13 @@ class FontGlyph:
                 (self.width, self.height) = self.fontsize[lang]
                 self.width += self.cfg.get("extra_x", 0)
                 self.height += self.cfg.get("extra_y", 0)
-                self.font = ImageFont.truetype(f"fonts/{lang}/" + self.cfg["fontfile"], self.cfg["size"])
+                self.font = ImageFont.truetype(f"fonts/" + self.cfg["fontfile"], self.cfg["size"])
                 if lang == "en_US":
                     self.encfg = self.cfg
                     self.enfont = self.font
-                self.fallbackcfg = self.fallbackinfo.get(lang)
-                self.fallbackname = self.cfg.get("fallback", self.fallbackcfg["fontfile"])
+                self.fallbackcfg = self.cfg.get("fallback", self.cfg)
                 if self.fallbackcfg:
-                    self.fallbackfont = ImageFont.truetype(f"fonts/{lang}/" + self.fallbackname, 
-                                                           self.cfg.get("fallbacksize", self.cfg["size"]))
+                    self.fallbackfont = ImageFont.truetype(f"fonts/" + self.fallbackcfg["fontfile"], self.fallbackcfg["size"])
                     self.fallbackfail = Image.new("1", (self.width, self.height), 0)
                     ImageDraw.Draw(self.fallbackfail).text((0, 0), "𪾰", fill=1, font=self.fallbackfont)
                 

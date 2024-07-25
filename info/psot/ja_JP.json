@@ -1,7 +1,10 @@
 {
     "ComicSans": {
         "fontfile": "HAPPYRUIKAKYOHKAN-07.TTF",
-        "fallbacksize": 32,
+        "fallback": {
+            "fontfile": "unifont_jp.otf",
+            "size": 32
+        },
         "size": 28,
         "extra_y": 0,
         "start_y": 0,
@@ -12,12 +15,19 @@
         "fontfile": "fusion-pixel-8px-ja.ttf",
         "threshold": 80,
         "size": 8,
-        "fallbacksize": 8,
+        "fallback": {
+            "fontfile": "unifont_jp.otf",
+            "size": 8
+        },
         "start_y": -1
     },
     "DeterminationMono": {
         "fontfile": "JF-Dot-Shinonome12.ttf",
         "size": 12,
+        "fallback": {
+            "fontfile": "fzxs12-Pixel.ttf",
+            "size": 12
+        },
         "extra_x": 3,
         "extra_y": -1,
         "start_x": 1,
@@ -26,6 +36,10 @@
     "DeterminationSans": {
         "fontfile": "JF-Dot-Shinonome12.ttf",
         "size": 12,
+        "fallback": {
+            "fontfile": "fzxs12-Pixel.ttf",
+            "size": 12
+        },
         "extra_x": 2,
         "extra_y": -1,
         "start_x": 1,
@@ -34,6 +48,10 @@
     "DiaryOfAn8BitMage": {
         "fontfile": "fusion-pixel-8px-ja.ttf",
         "threshold": 80,
+        "fallback": {
+            "fontfile": "unifont.otf",
+            "size": 16
+        },
         "size": 16,
         "start_y": -1,
         "extra_x": 1
@@ -41,6 +59,10 @@
     "DotumChe": {
         "fontfile": "FOT-UDKAKUGOC80PRO-M.OTF",
         "size": 16,
+        "fallback": {
+            "fontfile": "unifont.otf",
+            "size": 16
+        },
         "extra_x": 4,
         "start_y": 1,
         "extra_y": 2,
@@ -49,13 +71,20 @@
     "MarsNeedsCunnilingus": {
         "fontfile": "fusion-pixel-8px-ja.ttf",
         "threshold": 80,
+        "fallback": {
+            "fontfile": "unifont.otf",
+            "size": 16
+        },
         "size": 16,
         "start_y": -1,
         "extra_y": 0
     },
     "Papyrus": {
         "fontfile": "TANUKIMAGIC-2.TTF",
-        "fallbacksize": 32,
+        "fallback": {
+            "fontfile": "unifont_jp.otf",
+            "size": 32
+        },
         "size": 34,
         "threshold": 110,
         "extra_x": 1,

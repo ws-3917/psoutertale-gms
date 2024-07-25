@@ -1,6 +1,10 @@
 {
     "ComicSans": {
         "fontfile": "HAPPYRUIKAKYOHKAN-07.TTF",
+        "fallback": {
+            "fontfile": "fzse-plus.ttf",
+            "size": 16
+        },
         "fallbacksize": 32,
         "size": 28,
         "extra_y": -2,
