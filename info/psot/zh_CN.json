@@ -3,7 +3,8 @@
         "fontfile": "fzse-plus.ttf",
         "fallback": {
             "fontfile": "HKFY_W7_sans.ttf",
-            "size": 28
+            "size": 28,
+            "start_y": -2
         },
         "size": 28,
         "extra_y": -4,
