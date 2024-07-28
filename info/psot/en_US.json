@@ -370,7 +370,8 @@
                 "extra_x": 2
             },
             ".": {
-                "start_x": 2
+                "start_x": 2,
+                "start_y": 4
             },
             ",": {
                 "start_x": 2
