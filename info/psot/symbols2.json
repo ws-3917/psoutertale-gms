@@ -80,9 +80,15 @@
     "Papyrus": {
         "fontfile": "fzkt_GBK.ttf",
         "fallbacksize": 32,
-        "size": 36,
-        "threshold": 120,
+        "size": 34,
+        "threshold": 150,
         "extra_y": 0,
-        "start_y": 0
+        "start_x": -2,
+        "start_y": 0,
+        "special": {
+            "？": {
+                "start_y": -2
+            }
+        }
     }
 }
