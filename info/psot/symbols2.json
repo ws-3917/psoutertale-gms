@@ -10,7 +10,15 @@
         "extra_y": -2,
         "start_y": -2,
         "extra_x": 2,
-        "threshold": 65
+        "threshold": 65,
+        "special": {
+            "？": {
+                "start_y": -2
+            },
+            "！": {
+                "start_y": -2
+            }
+        }
     },
     "CryptOfTomorrow": {
         "fontfile": "fusion-pixel-8px-zh_hans.ttf",
