@@ -1,16 +1,23 @@
 {
     "ComicSans": {
-        "fontfile": "HAPPYRUIKAKYOHKAN-07.TTF",
+        "fontfile": "fzse-plus.ttf",
         "fallback": {
-            "fontfile": "fzse-plus.ttf",
-            "size": 16
+            "fontfile": "HKFY_W7_sans.ttf",
+            "size": 28,
+            "start_y": -1
         },
-        "fallbacksize": 32,
         "size": 28,
         "extra_y": -2,
         "start_y": -2,
         "extra_x": 2,
-        "threshold": 145
+        "threshold": 80,
+        "special": {
+            "∞": {
+                "extra_x": 16,
+                "start_x": 0,
+                "start_y": 1
+            }
+        }
     },
     "CryptOfTomorrow": {
         "fontfile": "fusion-pixel-8px-zh_hans.ttf",
@@ -58,7 +65,7 @@
             "『": {
                 "start_x": -5,
                 "extra_x": -7,
-                "start_y": -1
+                "start_y": -2
             },
             "』": {
                 "start_x": -2,
@@ -66,6 +73,7 @@
                 "start_y": 2
             },
             "「": {
+                "start_y": -1,
                 "start_x": -5,
                 "extra_x": -7
             },
@@ -297,7 +305,7 @@
         "start_y": 0,
         "special": {
             "∞": {
-                "extra_x": 8,
+                "extra_x": 16,
                 "start_x": 0,
                 "start_y": 6
             }
