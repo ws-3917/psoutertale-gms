@@ -330,6 +330,7 @@
         "fontfile": "determination-ru.ttf",
         "size": 13,
         "extra_x": -1,
+        "start_x": -1,
         "threshold": 128,
         "fallback": {
             "fontfile": "unifont.otf",
