@@ -339,61 +339,21 @@
         "extra_y": -2,
         "start_y": -2,
         "special": {
-            " ": {
-                "extra_x": -2
-            },
             ":": {
-                "extra_x": -2,
                 "start_x": 1
             },
-            "(": {
-                "extra_x": -2
-            },
-            "[": {
-                "extra_x": -2
-            },
-            "]": {
-                "extra_x": -2
-            },
-            ")": {
-                "extra_x": -2
-            },
-            "{": {
-                "extra_x": -2
-            },
-            "}": {
-                "extra_x": -2
-            },
-            "m": {
-                "extra_x": 1
-            },
-            "w": {
-                "extra_x": 1
-            },
-            "M": {
-                "extra_x": 1
-            },
-            "W": {
-                "extra_x": 1
-            },
-            "%": {
-                "extra_x": 1
-            },
-            "#": {
-                "extra_x": 1
-            },
-            "*": {
-                "extra_x": 1
-            },
             "·": {
-                "extra_x": 8,
+                "extra_x": 7,
                 "start_x": 3
             },
             "Δ": {
-                "extra_x": 2
+                "extra_x": 1
             },
             ".": {
-                "start_x": 2
+                "start_x": 1
+            },
+            ">": {
+                "start_x": -1
             },
             ",": {
                 "start_x": 1
