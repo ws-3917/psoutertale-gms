@@ -329,6 +329,7 @@
     "DeterminationSans": {
         "fontfile": "determination-ru.ttf",
         "size": 13,
+        "extra_x": -1,
         "threshold": 128,
         "fallback": {
             "fontfile": "unifont.otf",
@@ -522,11 +523,12 @@
         "size": 16,
         "threshold": 128,
         "start_y": 1,
-        "extra_x": 3,
+        "extra_x": 4,
         "extra_y": 2
     },
     "MarsNeedsCunnilingus": {
         "fontfile": "mars-ru.ttf",
+        "extra_x": -2,
         "size": 24,
         "fallback": {
             "fontfile": "unifont.otf",
@@ -563,6 +565,7 @@
         "threshold": 128,
         "size": 30,
         "extra_y": 8,
+        "extra_x": -2,
         "start_x": 1,
         "start_y": 4,
         "special": {
