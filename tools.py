@@ -61,10 +61,10 @@ class FontGlyph:
             height += (self.fontsize[lang][1] + self.rest_y + self.fontinfo[lang][font].get("extra_y", 0)) * (charcount // char_perline + 1)
         return height
 
-    def check(self, ch) -> str:
+    def check(self, ch, fontname) -> str:
         # 特殊字符直接放行或跳过
         ch_code = hex(ord(ch))
-        if ch in [' ', '　'] or ch_code in self.special_char_list:
+        if ch in [' ', '　']:
             return 'yep'
         if ch == '\n':
             return 'nope'
@@ -75,12 +75,13 @@ class FontGlyph:
         if testglyph != self.fail:
             return 'yep'
         # 尝试使用fallback
+        if ch_code in self.special_char_list and os.path.exists(f"special/{self.project}/{fontname}/{ch_code}.png"):
+            return 'fallback'
+        ImageDraw.Draw(testglyph).text((0, 0), ch, fill=1, font=self.fallbackfont)
+        if testglyph != self.fallbackfail:
+            return 'fallback'
         else:
-            ImageDraw.Draw(testglyph).text((0, 0), ch, fill=1, font=self.fallbackfont)
-            if testglyph != self.fallbackfail:
-                return 'fallback'
-            else:
-                return 'nope'
+            return 'nope'
     
     def addfont(self, ch, fontname, fallback=False) -> None:
         # 先获取基本信息
@@ -195,7 +196,7 @@ class FontGlyph:
                 self.errorcount = 0
                 for ch in self.charset[lang]:
                     # 检查字符是否可用
-                    status = self.check(ch) # 返回值有 yep, nope, fallback
+                    status = self.check(ch, fontname) # 返回值有 yep, nope, fallback
                     if status == 'yep':
                         self.addfont(ch, fontname)    # addfont有csv的添加
                     elif status == 'fallback':
