@@ -133,7 +133,7 @@ class FontGlyph:
                             0, 0, width, height))
         elif self.project == 'gms':
             self.csv.append((ord(ch), self.x, self.y, width, height,
-                            width, 0))
+                            font.getbbox(ch)[2]-font.getbbox(ch)[0], 0))
 
         # 移动画笔，准备下一次绘制
         self.x += width + self.rest_x
