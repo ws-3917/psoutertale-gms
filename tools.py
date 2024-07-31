@@ -131,7 +131,7 @@ class FontGlyph:
         if self.project == 'psot':
             self.csv.append((ord(ch), self.x, self.y, width, height,
                             0, 0, width, height))
-        elif self.project == 'gms':
+        else:
             self.csv.append((ord(ch), self.x, self.y, width, height,
                             font.getbbox(ch)[2]-font.getbbox(ch)[0], 0))
 
@@ -232,7 +232,7 @@ class FontGlyph:
             self.glyph.save(f"dist/{self.project}/{self.langlist[ind]}/{fontname}.png")
             if self.project == 'psot':
                 output_csv = f"dist/{self.project}/{self.langlist[ind]}/{fontname}.csv"
-            elif self.project == 'gms':
+            else:
                 output_csv = f"dist/{self.project}/{self.langlist[ind]}/glyphs_{fontname}.csv"
             with open(output_csv, "w", encoding="utf-8", newline='') as file:
                 self.writer = csv.writer(file, delimiter=';')
