@@ -1,6 +1,6 @@
 import os, tools, sys
 def main():
-    project = 'psot'    # psot 或 gms, psot为outertale特殊格式，gms为通用gms字图生成
+    project = 'psot'    # 项目名，如果命名为psot则生成outertale特定格式，否则为gms通用格式
     sys.path.append(os.getcwd())
     tools.bashcmd(f"mkdir -p dist/{project}")
     tools.FontGlyph(project, ['en_US', 'symbols1']).task()
