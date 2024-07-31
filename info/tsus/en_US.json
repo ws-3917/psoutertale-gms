@@ -2,7 +2,10 @@
     "fnt_sans": {
         "fontfile": "comicsans-px.ttf",
         "size": 32,
-        "fallbacksize": 32,
+        "fallback": {
+            "fontfile": "unifont.otf",
+            "size": 32
+        },
         "extra_x": -1,
         "extra_y": -3,
         "start_y": -3,
@@ -184,7 +187,10 @@
         "size": 10,
         "extra_x": -4,
         "extra_y": 2,
-        "fallbacksize": 8,
+        "fallback": {
+            "fontfile": "unifont.otf",
+            "size": 8
+        },
         "special": {}
     },
     "fnt_dotumche": {
@@ -222,7 +228,10 @@
     },
     "fnt_papyrus": {
         "fontfile": "papyrus-px_alt.ttf",
-        "fallbacksize": 32,
+        "fallback": {
+            "fontfile": "unifont.otf",
+            "size": 32
+        },
         "size": 32,
         "extra_y": 8,
         "start_y": 4,

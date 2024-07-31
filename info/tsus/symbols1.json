@@ -1,7 +1,10 @@
 {
     "fnt_sans": {
         "fontfile": "HAPPYRUIKAKYOHKAN-07.TTF",
-        "fallbacksize": 32,
+        "fallback": {
+            "fontfile": "unifont.otf",
+            "size": 32
+        },
         "size": 28,
         "extra_y": -2,
         "start_y": -2,
@@ -12,7 +15,10 @@
         "fontfile": "fusion-pixel-8px-zh_hans.ttf",
         "threshold": 80,
         "size": 16,
-        "fallbacksize": 8,
+        "fallback": {
+            "fontfile": "unifont.otf",
+            "size": 8
+        },
         "start_y": -1
     },
     "fnt_main": {
@@ -95,7 +101,10 @@
         "size": 10,
         "extra_x": 0,
         "extra_y": 2,
-        "fallbacksize": 8,
+        "fallback": {
+            "fontfile": "unifont.otf",
+            "size": 8
+        },
         "special": {}
     },
     "fnt_dotumche": {
@@ -115,7 +124,10 @@
     },
     "fnt_papyrus": {
         "fontfile": "fzkt_GBK.ttf",
-        "fallbacksize": 32,
+        "fallback": {
+            "fontfile": "unifont.otf",
+            "size": 32
+        },
         "size": 34,
         "threshold": 120,
         "extra_y": 0,

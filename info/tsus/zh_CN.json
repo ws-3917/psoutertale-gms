@@ -2,7 +2,10 @@
     "fnt_sans": {
         "fontfile": "fzse-plus.ttf",
         "size": 28,
-        "fallbacksize": 32,
+        "fallback": {
+            "fontfile": "unifont.otf",
+            "size": 32
+        },
         "extra_y": -2,
         "start_y": -2,
         "extra_x": 2,
@@ -12,7 +15,10 @@
         "fontfile": "fusion-pixel-8px-zh_hans.ttf",
         "threshold": 80,
         "size": 16,
-        "fallbacksize": 16,
+        "fallback": {
+            "fontfile": "unifont.otf",
+            "size": 16
+        },
         "start_y": -1
     },
     "fnt_main": {
@@ -38,7 +44,10 @@
         "size": 10,
         "extra_x": 0,
         "extra_y": 2,
-        "fallbacksize": 8,
+        "fallback": {
+            "fontfile": "unifont.otf",
+            "size": 8
+        },
         "special": {}
     },
     "fnt_dotumche": {
@@ -60,7 +69,10 @@
     "fnt_papyrus": {
         "fontfile": "fzkt_GBK.ttf",
         "size": 34,
-        "fallbacksize": 32,
+        "fallback": {
+            "fontfile": "unifont.otf",
+            "size": 32
+        },
         "threshold": 155,
         "extra_y": 0,
         "start_y": 0

@@ -23,7 +23,10 @@
         "fontfile": "fusion-pixel-8px-zh_hans.ttf",
         "threshold": 80,
         "size": 8,
-        "fallbacksize": 8,
+        "fallback": {
+            "fontfile": "unifont.otf",
+            "size": 8
+        },
         "start_y": -1
     },
     "DeterminationMono": {
@@ -298,7 +301,6 @@
     },
     "Papyrus": {
         "fontfile": "fzkt_GBK.ttf",
-        "fallbacksize": 32,
         "size": 34,
         "threshold": 130,
         "extra_y": 0,
