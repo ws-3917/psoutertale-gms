@@ -35,7 +35,6 @@ class FontGlyph:
         with open(f'special/{self.project}/special.txt', 'r+', encoding='utf-8') as file:
             lines = file.readlines()
         self.special_char_list = [line.strip() for line in lines]
-        print(self.special_char_list)
     
     # 获取字体大小
     def loadsize(self, font) -> None:

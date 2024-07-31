@@ -1,5 +1,3 @@
  !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQ
-RSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~¡¢£¤¥
-¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×
-ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿāēěīōūǎǐǒǔ
-Δπ
+RSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~àáæèé
+ìíîòóùúāēěīōūǎǐǒǔΔπ
