@@ -28,9 +28,14 @@ class FontGlyph:
                 self.charset[lang] = file.read()
         
         # 0714 - special特殊字符列表（手动绘制字形）
-        specialChar = os.listdir(f'special/{self.fontlist[0]}')
-        self.special_char_list = [os.path.splitext(file)[0]
-                                    for file in specialChar if file.lower().endswith('.png')]
+        if not os.path.exists(f'special/{self.project}'):
+            bashcmd(f"mkdir special/{self.project}")
+        if not os.path.exists(f'special/{self.project}/special.txt'):
+            bashcmd(f'echo "" > special/{self.project}/special.txt')
+        with open(f'special/{self.project}/special.txt', 'r+', encoding='utf-8') as file:
+            lines = file.readlines()
+        self.special_char_list = [line.strip() for line in lines]
+        print(self.special_char_list)
     
     # 获取字体大小
     def loadsize(self, font) -> None:
@@ -112,8 +117,8 @@ class FontGlyph:
         # 开始绘制
         # 0714 - 特殊字形手动添加
         ch_code = hex(ord(ch))
-        if ch_code in self.special_char_list and os.path.exists(f"special/{fontname}/{ch_code}.png"):
-            symbol = Image.open(f"special/{fontname}/{ch_code}.png")
+        if ch_code in self.special_char_list and os.path.exists(f"special/{self.project}/{fontname}/{ch_code}.png"):
+            symbol = Image.open(f"special/{self.project}/{fontname}/{ch_code}.png")
             resize_factor = int(self.cfg.get("special_factor", max(round(self.cfg["size"] / 16.0), 1)))
             special_y = int(self.cfg.get("special_y", 0))
             symbol = symbol.resize((resize_factor * symbol.size[0], resize_factor * symbol.size[1]), Image.Resampling.NEAREST)
