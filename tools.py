@@ -125,24 +125,12 @@ class FontGlyph:
         else:
             self.drawtool.text((self.x + start_x, self.y + start_y),
                                 ch, fill=(255, 255), font=font)
-        # test
-        # testglyph = Image.new("LA", (width, height), 0)
-        # ImageDraw.Draw(testglyph).text((start_x, start_y), ch, fill=(0, 255), font=font)
-        # pixel = testglyph.load()
-        # threshold = max(cfg.get("threshold", 0), 0)
-        # for x in range(width):
-        #     for y in range(height):
-        #         pixel[x, y] = (pixel[x, y][0], 255 * int(pixel[x, y][1] > threshold))
-        # testglyph = testglyph.convert("RGBA")
-        # bashcmd(f"mkdir -p test/{fontname}/")
-        # testglyph.save(f"test/{fontname}/uni{format(ord(ch), '04x')}.png")
-        ###
 
         # 添加csv数据
         if self.project == 'psot':
             self.csv.append((ord(ch), self.x, self.y, width, height,
                             0, 0, width, height))
-        elif self.project == 'tsus':
+        elif self.project == 'gms':
             self.csv.append((ord(ch), self.x, self.y, width, height,
                             width, 0))
 
@@ -243,7 +231,7 @@ class FontGlyph:
             self.glyph.save(f"dist/{self.project}/{self.langlist[ind]}/{fontname}.png")
             if self.project == 'psot':
                 output_csv = f"dist/{self.project}/{self.langlist[ind]}/{fontname}.csv"
-            elif self.project == 'tsus':
+            elif self.project == 'gms':
                 output_csv = f"dist/{self.project}/{self.langlist[ind]}/glyphs_{fontname}.csv"
             with open(output_csv, "w", encoding="utf-8", newline='') as file:
                 self.writer = csv.writer(file, delimiter=';')
