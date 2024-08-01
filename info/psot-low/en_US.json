@@ -31,9 +31,6 @@
             "o": {
                 "extra_x": -1
             },
-            "S": {
-                "extra_x": -1
-            },
             "w": {
                 "extra_x": 1
             },
@@ -74,7 +71,10 @@
                 "extra_x": -2
             },
             "Q": {
-                "extra_x": 3
+                "extra_x": 4
+            },
+            "S": {
+                "extra_x": 1
             },
             "T": {
                 "extra_x": 1

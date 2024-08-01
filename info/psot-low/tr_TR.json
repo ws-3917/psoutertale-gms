@@ -1,15 +1,15 @@
 {
     "ComicSans": {
         "fontfile": "comicsans-px.ttf",
-        "size": 32,
+        "size": 16,
         "fallback": {
             "fontfile": "unifont.otf",
-            "size": 32
+            "size": 16
         },
-        "extra_x": -1,
-        "start_x": 3,
-        "extra_y": -3,
-        "start_y": -3,
+        "extra_x": 0,
+        "start_x": 1,
+        "extra_y": -1,
+        "start_y": -1,
         "special": {
             "d": {
                 "extra_x": 1
@@ -93,10 +93,10 @@
                 "extra_x": 6
             },
             "S": {
-                "extra_x": -1
+                "extra_x": 0
             },
             "Ş": {
-                "extra_x": -1
+                "extra_x": 0
             },
             "T": {
                 "extra_x": 1
