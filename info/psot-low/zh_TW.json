@@ -161,7 +161,8 @@
             "size": 16
         },
         "size": 20,
-        "start_y": -1,
+        "start_y": -2,
+        "extra_y": -2,
         "extra_x": 1
     },
     "DotumChe": {
