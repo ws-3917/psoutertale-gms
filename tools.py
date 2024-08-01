@@ -128,7 +128,7 @@ class FontGlyph:
                                 ch, fill=(255, 255), font=font)
 
         # 添加csv数据
-        if self.project == 'psot':
+        if 'psot' in self.project:
             self.csv.append((ord(ch), self.x, self.y, width, height,
                             0, 0, width, height))
         else:
@@ -230,7 +230,7 @@ class FontGlyph:
                 
             bashcmd(f"mkdir -p dist/{self.project}/{self.langlist[ind]}")
             self.glyph.save(f"dist/{self.project}/{self.langlist[ind]}/{fontname}.png")
-            if self.project == 'psot':
+            if 'psot' in self.project:
                 output_csv = f"dist/{self.project}/{self.langlist[ind]}/{fontname}.csv"
             else:
                 output_csv = f"dist/{self.project}/{self.langlist[ind]}/glyphs_{fontname}.csv"
