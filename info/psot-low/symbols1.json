@@ -153,10 +153,15 @@
         }
     },
     "DiaryOfAn8BitMage": {
-        "fontfile": "fusion-pixel-8px-zh_hans.ttf",
-        "threshold": 80,
-        "size": 16,
-        "start_y": -1,
+        "fontfile": "fzys9.ttf",
+        "threshold": 70,
+        "fallback": {
+            "fontfile": "unifont.otf",
+            "size": 16
+        },
+        "size": 20,
+        "start_y": -2,
+        "extra_y": -2,
         "extra_x": 1,
         "special": {
             "∞": {
