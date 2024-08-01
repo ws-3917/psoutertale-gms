@@ -163,6 +163,7 @@
         "start_y": -2,
         "extra_y": -2,
         "extra_x": 1,
+        "start_x": -1,
         "special": {
             "∞": {
                 "extra_x": 8,
