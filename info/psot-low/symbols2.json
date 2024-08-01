@@ -10,7 +10,7 @@
         "extra_y": -1,
         "start_y": -1,
         "extra_x": 1,
-        "threshold": 65,
+        "threshold": 80,
         "special": {
             "？": {
                 "start_y": -2
@@ -66,8 +66,8 @@
             "size": 16
         },
         "size": 20,
-        "start_y": -2,
-        "extra_y": -2,
+        "start_y": -3,
+        "extra_y": -3,
         "extra_x": 1,
         "start_x": -1
     },
@@ -92,7 +92,7 @@
         "threshold": 150,
         "extra_y": 0,
         "start_x": -1,
-        "start_y": 0,
+        "start_y": -1,
         "special": {
             "？": {
                 "start_y": -2

@@ -12,7 +12,7 @@ class FontGlyph:
         self.langlist = langlist
         self.totalwidth = totalwidth
         self.rest_y = 1   # 松弛间隔，防止行之间重叠
-        self.rest_x = 1   # 横向间隔
+        self.rest_x = 0   # 横向间隔
         # 根据project读取对应路径下的base,获取字体列表和基本信息
         with open(f"info/{self.project}/base.json", encoding="utf-8") as file:
             self.baseinfo = dict(json.loads(file.read()))
@@ -137,26 +137,6 @@ class FontGlyph:
 
         # 移动画笔，准备下一次绘制
         self.x += width + self.rest_x
-
-    # 任务：字符集预处理（排序去重）
-    def sort_charset(self, file_path, chars_per_line=50):
-        # 读取文件并处理字符
-        ch_list = []
-        with open(file_path, "r", encoding="utf-8") as file:
-            content = file.read()
-            for ch in content:
-                if ch != '\n':
-                    ch_list.append(ch)
-        
-        # 去重并排序
-        ch_list = sorted(set(ch_list))
-        
-        # 写入处理后的内容
-        with open(file_path, "w", encoding="utf-8") as file:
-            for i, ch in enumerate(ch_list):
-                if i > 0 and i % chars_per_line == 0:
-                    file.write("\n")
-                file.write(ch)
    
     # 主任务：生成字图
     def task(self) -> None:
@@ -174,7 +154,7 @@ class FontGlyph:
             for lang in self.langlist:
                 # 加载配置文件和字符集
                 print(colored(f" -> {lang}", "yellow"))
-                self.sort_charset(f"charset/{lang}.txt")
+                sort_charset(f"charset/{lang}.txt")
                 self.cfg = self.fontinfo[lang][fontname]
                 (self.width, self.height) = self.fontsize[lang]
                 self.width += self.cfg.get("extra_x", 0)
@@ -237,3 +217,22 @@ class FontGlyph:
             with open(output_csv, "w", encoding="utf-8", newline='') as file:
                 self.writer = csv.writer(file, delimiter=';')
                 self.writer.writerows(self.csv)
+
+def sort_charset(file_path, chars_per_line=50):
+    # 读取文件并处理字符
+    ch_list = []
+    with open(file_path, "r", encoding="utf-8") as file:
+        content = file.read()
+        for ch in content:
+            if ch != '\n':
+                ch_list.append(ch)
+    
+    # 去重并排序
+    ch_list = sorted(set(ch_list))
+    
+    # 写入处理后的内容
+    with open(file_path, "w", encoding="utf-8") as file:
+        for i, ch in enumerate(ch_list):
+            if i > 0 and i % chars_per_line == 0:
+                file.write("\n")
+            file.write(ch)

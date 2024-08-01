@@ -29,120 +29,7 @@
         "start_y": -1,
         "start_x": 1,
         "extra_x": 3,
-        "extra_y": -1,
-        "special": {
-            "ㄅ": {
-                "start_y": -1
-            },
-            "ㄆ": {
-                "start_y": -1
-            },
-            "ㄇ": {
-                "start_y": -1
-            },
-            "ㄈ": {
-                "start_y": -1
-            },
-            "ㄉ": {
-                "start_y": -1
-            },
-            "ㄊ": {
-                "start_y": -1
-            },
-            "ㄋ": {
-                "start_y": -1
-            },
-            "ㄌ": {
-                "start_y": -1
-            },
-            "ㄍ": {
-                "start_y": -1
-            },
-            "ㄎ": {
-                "start_y": -1
-            },
-            "ㄏ": {
-                "start_y": -1
-            },
-            "ㄐ": {
-                "start_y": -1
-            },
-            "ㄑ": {
-                "start_y": -1
-            },
-            "ㄒ": {
-                "start_y": -1
-            },
-            "ㄓ": {
-                "start_y": -1
-            },
-            "ㄔ": {
-                "start_y": -1
-            },
-            "ㄕ": {
-                "start_y": -1
-            },
-            "ㄖ": {
-                "start_y": -1
-            },
-            "ㄗ": {
-                "start_y": -1
-            },
-            "ㄘ": {
-                "start_y": -1
-            },
-            "ㄙ": {
-                "start_y": -1
-            },
-            "ㄚ": {
-                "start_y": -1
-            },
-            "ㄛ": {
-                "start_y": -1
-            },
-            "ㄜ": {
-                "start_y": -1
-            },
-            "ㄝ": {
-                "start_y": -1
-            },
-            "ㄞ": {
-                "start_y": -1
-            },
-            "ㄟ": {
-                "start_y": -1
-            },
-            "ㄠ": {
-                "start_y": -1
-            },
-            "ㄡ": {
-                "start_y": -1
-            },
-            "ㄢ": {
-                "start_y": -1
-            },
-            "ㄣ": {
-                "start_y": -1
-            },
-            "ㄤ": {
-                "start_y": -1
-            },
-            "ㄥ": {
-                "start_y": -1
-            },
-            "ㄦ": {
-                "start_y": -1
-            },
-            "ㄧ": {
-                "start_y": -1
-            },
-            "ㄨ": {
-                "start_y": -1
-            },
-            "ㄩ": {
-                "start_y": -1
-            }
-        }
+        "extra_y": -1
     },
     "DeterminationSans": {
         "fontfile": "fzxs12-Pixel.ttf",
@@ -161,8 +48,8 @@
             "size": 16
         },
         "size": 20,
-        "start_y": -2,
-        "extra_y": -2,
+        "start_y": -3,
+        "extra_y": -3,
         "start_x": -1,
         "extra_x": 1
     },
@@ -193,9 +80,9 @@
     "Papyrus": {
         "fontfile": "fzkt_GBK.ttf",
         "size": 17,
-        "threshold": 155,
+        "threshold": 145,
         "extra_y": 0,
         "start_x": -1,
-        "start_y": 0
+        "start_y": -1
     }
 }
