@@ -4,6 +4,7 @@ def main():
     project = 'psot-low'    # 项目名，如果命名为psot则生成outertale特定格式，否则为gms通用格式
     sys.path.append(os.getcwd())
     bashcmd(f"mkdir -p dist/{project}")
+    # sort_charset("charset/zh_CN.txt")
     FontGlyph(project, ['en_US', 'symbols1']).task()
     FontGlyph(project, ['ru_RU', 'symbols1']).task()
     FontGlyph(project, ['tr_TR', 'symbols1']).task()
