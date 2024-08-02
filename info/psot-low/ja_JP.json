@@ -32,7 +32,7 @@
         "threshold": 128,
         "extra_x": 0,
         "extra_y": -1,
-        "start_x": 0,
+        "start_x": -1,
         "start_y": -1
     },
     "DeterminationSans": {
@@ -45,7 +45,8 @@
         "threshold": 128,
         "extra_x": 0,
         "extra_y": -1,
-        "start_x": 1
+        "start_x": -1,
+        "start_y": -1
     },
     "DiaryOfAn8BitMage": {
         "fontfile": "JF-Dot-Shinonome16.ttf",
