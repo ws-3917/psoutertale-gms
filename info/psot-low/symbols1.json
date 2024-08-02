@@ -44,7 +44,7 @@
                 "start_y": 1
             },
             "。": {
-                "start_y": 2
+                "start_y": 3
             },
             "、": {
                 "start_y": 2
@@ -225,7 +225,7 @@
                 "start_y": 1
             },
             "。": {
-                "start_y": 2
+                "start_y": 3
             },
             "“": {
                 "start_x": -5,
@@ -430,7 +430,7 @@
                 "start_y": 6
             },
             "。": {
-                "start_y": -2
+                "start_y": -1
             },
             "、": {
                 "start_y": -2
