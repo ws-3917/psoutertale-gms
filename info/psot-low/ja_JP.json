@@ -60,16 +60,16 @@
         "extra_x": 1
     },
     "DotumChe": {
-        "fontfile": "FOT-UDKAKUGOC80PRO-M.OTF",
-        "size": 16,
+        "fontfile": "JF-Dot-Shinonome14.ttf",
+        "size": 14,
         "fallback": {
             "fontfile": "unifont.otf",
             "size": 16
         },
-        "extra_x": 4,
+        "extra_x": 0,
         "start_y": 0,
-        "extra_y": 2,
-        "threshold": 160
+        "extra_y": 1,
+        "threshold": 128
     },
     "MarsNeedsCunnilingus": {
         "fontfile": "fusion-pixel-8px-ja.ttf",
