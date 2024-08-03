@@ -23,11 +23,11 @@
         "start_y": -1
     },
     "DeterminationMono": {
-        "fontfile": "JF-Dot-Shinonome12.ttf",
-        "size": 12,
+        "fontfile": "JF-Dot-Shinonome14.ttf",
+        "size": 14,
         "fallback": {
-            "fontfile": "fzxs12-Pixel.ttf",
-            "size": 12
+            "fontfile": "fzxs14.ttf",
+            "size": 14
         },
         "threshold": 128,
         "extra_x": 0,
@@ -36,11 +36,11 @@
         "start_y": -1
     },
     "DeterminationSans": {
-        "fontfile": "JF-Dot-Shinonome12.ttf",
-        "size": 12,
+        "fontfile": "JF-Dot-Shinonome14.ttf",
+        "size": 14,
         "fallback": {
-            "fontfile": "fzxs12-Pixel.ttf",
-            "size": 12
+            "fontfile": "fzxs14.ttf",
+            "size": 14
         },
         "threshold": 128,
         "extra_x": 0,
