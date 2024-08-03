@@ -8,7 +8,7 @@ def main():
     FontGlyph(project, ['en_US', 'symbols1']).task()
     FontGlyph(project, ['ru_RU', 'symbols1']).task()
     FontGlyph(project, ['tr_TR', 'symbols1']).task()
-    FontGlyph(project, ['JPlatin', 'symbols1', "ja_JP", 'symbols2']).task()
+    FontGlyph(project, ['JPlatin', 'JPsymbols1', "ja_JP", 'JPsymbols2']).task()
     FontGlyph(project, ['en_US', 'symbols1', "zh_CN", 'symbols2']).task()
     FontGlyph(project, ['en_US', 'symbols1', "zh_TW", 'symbols2']).task()
     print("--- 成功生成所有字图！")
