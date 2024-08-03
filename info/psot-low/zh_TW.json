@@ -2,7 +2,7 @@
     "ComicSans": {
         "fontfile": "fzse-plus.ttf",
         "fallback": {
-            "fontfile": "HKFY_W7_sans.ttf",
+            "fontfile": "FOT-RodinHappyPro-EB.otf",
             "size": 14,
             "start_y": -1
         },
