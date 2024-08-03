@@ -33,7 +33,7 @@
         "extra_x": 0,
         "extra_y": -1,
         "start_x": -1,
-        "start_y": -2
+        "start_y": -1
     },
     "DeterminationSans": {
         "fontfile": "JF-Dot-Shinonome14.ttf",
@@ -46,7 +46,7 @@
         "extra_x": 0,
         "extra_y": -1,
         "start_x": -1,
-        "start_y": -2
+        "start_y": -1
     },
     "DiaryOfAn8BitMage": {
         "fontfile": "JF-Dot-Shinonome16.ttf",
