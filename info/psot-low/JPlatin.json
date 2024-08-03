@@ -208,7 +208,7 @@
             "fontfile": "unifont.otf",
             "size": 16
         },
-        "extra_x": -5,
+        "extra_x": -3,
         "start_y": 1,
         "extra_y": 2
     },
