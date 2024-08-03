@@ -1,6 +1,6 @@
 {
     "ComicSans": {
-        "fontfile": "FOT-RodinHappyPro-EB.otf",
+        "fontfile": "FOT-RodinHappyPro B.otf",
         "fallback": {
             "fontfile": "HAPPYRUIKAKYOHKAN-07.TTF",
             "size": 14,
@@ -10,7 +10,7 @@
         "extra_y": 0,
         "start_y": -1,
         "extra_x": 0,
-        "threshold": 170
+        "threshold": 160
     },
     "CryptOfTomorrow": {
         "fontfile": "fusion-pixel-8px-ja.ttf",
