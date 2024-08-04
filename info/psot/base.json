@@ -1,9 +1,9 @@
 {
     "ComicSans": {
-        "size": 32,
+        "size": 16,
         "shift_x": 0,
         "shift_y": 0,
-        "height": 28
+        "height": 14
     },
     "CryptOfTomorrow": {
         "size": 8,
@@ -27,7 +27,7 @@
         "size": 20,
         "shift_x": 0,
         "shift_y": 0,
-        "height": 19
+        "height": 20
     },
     "DotumChe": {
         "size": 18,
@@ -42,9 +42,9 @@
         "height": 18
     },
     "Papyrus": {
-        "size": 32,
+        "size": 16,
         "shift_x": 0,
         "shift_y": 0,
-        "height": 32
+        "height": 16
     }
 }
