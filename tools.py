@@ -3,7 +3,6 @@ import csv
 import json
 import os
 from PIL import Image, ImageFont, ImageDraw
-from termcolor import colored
 from concurrent.futures import ProcessPoolExecutor
 
 def sort_charset(file_path, chars_per_line=50):
