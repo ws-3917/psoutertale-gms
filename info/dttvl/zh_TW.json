@@ -1,0 +1,86 @@
+{
+    "sans": {
+        "fontfile": "fzse-plus.ttf",
+        "fallback": {
+            "fontfile": "HKFY_W7_sans.ttf",
+            "size": 14,
+            "start_y": 1
+        },
+        "size": 14,
+        "extra_y": 1,
+        "start_y": 1,
+        "extra_x": 1,
+        "threshold": 165
+    },
+    "hud": {
+        "fontfile": "fusion-pixel-8px-zh_hant.ttf",
+        "fallback": {
+            "fontfile": "unifont.otf",
+            "size": 8
+        },
+        "threshold": 80,
+        "size": 8,
+        "start_y": 1,
+        "extra_y": 1
+    },
+    "DTM-Mono": {
+        "fontfile": "fzxs12-Pixel.ttf",
+        "size": 12,
+        "threshold": 128,
+        "start_x": 1,
+        "extra_x": 2,
+        "start_y": 1,
+        "extra_y": 1
+    },
+    "DTM-Sans": {
+        "fontfile": "fzxs12-Pixel.ttf",
+        "size": 12,
+        "threshold": 128,
+        "start_x": 1,
+        "extra_x": 1,
+        "start_y": 1,
+        "extra_y": 1
+    },
+    "smw": {
+        "fontfile": "fzys9.ttf",
+        "threshold": 70,
+        "fallback": {
+            "fontfile": "unifont.otf",
+            "size": 16
+        },
+        "size": 20,
+        "extra_x": 1
+    },
+    "speechbubble": {
+        "fontfile": "WQY_BS_14px.ttf",
+        "fallback": {
+            "fontfile": "WQY_BS_15px.ttf",
+            "size": 18,
+            "start_y": 3
+        },
+        "size": 15,
+        "extra_x": 6,
+        "start_y": 4,
+        "extra_y": 4,
+        "threshold": 120
+    },
+    "battlehud": {
+        "fontfile": "fusion-pixel-8px-zh_hant.ttf",
+        "threshold": 80,
+        "fallback": {
+            "fontfile": "unifont.otf",
+            "size": 16
+        },
+        "size": 16,
+        "start_y": 1,
+        "extra_y": 1
+    },
+    "papyrus": {
+        "fontfile": "fzkt_GBK.ttf",
+        "size": 17,
+        "threshold": 145,
+        "start_x": -1,
+        "start_y": 1,
+        "extra_y": 1
+    }
+}

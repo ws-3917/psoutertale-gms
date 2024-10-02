@@ -1,0 +1,264 @@
+{
+    "fnt_sans": {
+        "fontfile": "comicsans-px.ttf",
+        "size": 32,
+        "fallback": {
+            "fontfile": "unifont.otf",
+            "size": 32
+        },
+        "extra_x": -1,
+        "extra_y": -3,
+        "start_y": -3,
+        "special": {
+            "i": {
+                "start_x": 1,
+                "extra_x": -3
+            },
+            "l": {
+                "start_x": 1,
+                "extra_x": -3
+            },
+            "m": {
+                "extra_x": 1
+            },
+            "w": {
+                "extra_x": 1
+            },
+            "@": {
+                "extra_x": 4
+            },
+            "A": {
+                "extra_x": 1
+            },
+            "C": {
+                "extra_x": 1
+            },
+            "G": {
+                "extra_x": 2
+            },
+            "H": {
+                "extra_x": 1
+            },
+            "M": {
+                "extra_x": 3
+            },
+            "N": {
+                "extra_x": 2
+            },
+            "O": {
+                "extra_x": 3
+            },
+            "P": {
+                "extra_x": -1
+            },
+            "Q": {
+                "extra_x": 4
+            },
+            "T": {
+                "extra_x": 1
+            },
+            "U": {
+                "extra_x": 1
+            },
+            "V": {
+                "extra_x": 1
+            },
+            "W": {
+                "extra_x": 4
+            },
+            "X": {
+                "extra_x": 2
+            },
+            "Y": {
+                "extra_x": 1
+            },
+            "Z": {
+                "extra_x": 1
+            },
+            "d": {
+                "extra_x": 0
+            },
+            "$": {
+                "extra_x": 0
+            },
+            "&": {
+                "extra_x": 2
+            },
+            "#": {
+                "extra_x": 2
+            },
+            "%": {
+                "extra_x": 4
+            }
+        }
+    },
+    "fnt_crypt": {
+        "fontfile": "crypt.ttf",
+        "size": 10,
+        "start_y": 4,
+        "extra_y": 4
+    },
+    "fnt_main": {
+        "fontfile": "DTmono.ttf",
+        "size": 32,
+        "start_x": -1,
+        "extra_x": -2,
+        "extra_y": 1,
+        "special": {
+            "'": {
+                "start_x": 1
+            },
+            " ": {
+                "extra_x": -8
+            },
+            ":": {
+                "extra_x": -4,
+                "start_x": -2
+            },
+            ",": {
+                "extra_x": -6
+            },
+            "m": {
+                "extra_x": 2
+            },
+            "w": {
+                "extra_x": 2
+            },
+            "M": {
+                "extra_x": 2
+            },
+            "W": {
+                "extra_x": 2
+            },
+            "%": {
+                "extra_x": 2
+            },
+            "#": {
+                "extra_x": 2
+            },
+            "*": {
+                "extra_x": 2
+            },
+            "(": {
+                "extra_x": -2,
+                "start_x": -2
+            },
+            "[": {
+                "extra_x": -2,
+                "start_x": -2
+            },
+            "]": {
+                "extra_x": -2
+            },
+            ")": {
+                "extra_x": -2
+            },
+            "{": {
+                "extra_x": -2,
+                "start_x": -2
+            },
+            "}": {
+                "extra_x": -2
+            }
+        }
+    },
+    "fnt_mainsm": {
+        "fontfile": "DTsans.ttf",
+        "size": 16,
+        "extra_x": 0,
+        "extra_y": 0,
+        "special": {
+            ":": {
+                "start_x": 1
+            },
+            "(": {
+                "start_x": 2
+            },
+            "[": {
+                "start_x": 2
+            },
+            "{": {
+                "start_x": 2
+            }
+        }
+    },
+    "fnt_dotumche_sm": {
+        "fontfile": "fusion-pixel-10px-latin.ttf",
+        "size": 10,
+        "extra_x": -4,
+        "extra_y": 2,
+        "fallback": {
+            "fontfile": "unifont.otf",
+            "size": 8
+        },
+        "special": {}
+    },
+    "fnt_dotumche": {
+        "fontfile": "dotumche-px.ttf",
+        "size": 13,
+        "start_y": 1,
+        "extra_x": 3,
+        "extra_y": 2
+    },
+    "fnt_mars": {
+        "fontfile": "mars-px.ttf",
+        "size": 24,
+        "start_y": 0,
+        "extra_x": 1,
+        "special": {
+            " ": {
+                "extra_x": -4
+            },
+            "M": {
+                "extra_x": 3
+            },
+            "W": {
+                "extra_x": 3
+            },
+            "m": {
+                "extra_x": 3
+            },
+            "w": {
+                "extra_x": 3
+            },
+            ":": {
+                "extra_x": -6
+            }
+        }
+    },
+    "fnt_papyrus": {
+        "fontfile": "papyrus-px_alt.ttf",
+        "fallback": {
+            "fontfile": "unifont.otf",
+            "size": 32
+        },
+        "size": 32,
+        "extra_y": 8,
+        "start_y": 4,
+        "special": {
+            "I": {
+                "start_y": -1,
+                "extra_x": -3,
+                "start_x": -1
+            },
+            "B": {
+                "extra_x": 1
+            },
+            "D": {
+                "extra_x": 1
+            },
+            "G": {
+                "extra_x": 1
+            },
+            "M": {
+                "extra_x": 1
+            },
+            "S": {
+                "extra_x": 1
+            },
+            "W": {
+                "extra_x": 1
+            }
+        }
+    }
+}

@@ -1,0 +1,97 @@
+{
+    "sans": {
+        "fontfile": "FOT-RodinHappyPro B.otf",
+        "fallback": {
+            "fontfile": "HAPPYRUIKAKYOHKAN-07.TTF",
+            "size": 14,
+            "start_y": -1
+        },
+        "size": 14,
+        "extra_y": 0,
+        "start_y": -1,
+        "extra_x": 0,
+        "threshold": 80
+    },
+    "hud": {
+        "fontfile": "fusion-pixel-8px-ja.ttf",
+        "threshold": 80,
+        "size": 8,
+        "fallback": {
+            "fontfile": "unifont_jp.otf",
+            "size": 8
+        },
+        "start_y": -1
+    },
+    "DTM-Mono": {
+        "fontfile": "JF-Dot-Shinonome14.ttf",
+        "size": 14,
+        "fallback": {
+            "fontfile": "fzxs14.ttf",
+            "size": 14
+        },
+        "threshold": 128,
+        "extra_x": 0,
+        "extra_y": -1,
+        "start_x": -1,
+        "start_y": -1
+    },
+    "DTM-Sans": {
+        "fontfile": "JF-Dot-Shinonome14.ttf",
+        "size": 14,
+        "fallback": {
+            "fontfile": "fzxs14.ttf",
+            "size": 14
+        },
+        "threshold": 128,
+        "extra_x": 0,
+        "extra_y": -1,
+        "start_x": -1,
+        "start_y": -1
+    },
+    "smw": {
+        "fontfile": "JF-Dot-Shinonome16.ttf",
+        "threshold": 80,
+        "fallback": {
+            "fontfile": "unifont.otf",
+            "size": 16
+        },
+        "size": 16,
+        "start_y": -1,
+        "extra_x": 1
+    },
+    "speechbubble": {
+        "fontfile": "JF-Dot-Shinonome14.ttf",
+        "size": 14,
+        "fallback": {
+            "fontfile": "unifont.otf",
+            "size": 16
+        },
+        "extra_x": 3,
+        "start_y": 1,
+        "extra_y": 2,
+        "threshold": 160
+    },
+    "battlehud": {
+        "fontfile": "fusion-pixel-8px-ja.ttf",
+        "threshold": 80,
+        "fallback": {
+            "fontfile": "unifont.otf",
+            "size": 16
+        },
+        "size": 16,
+        "start_y": -1,
+        "extra_y": 0
+    },
+    "papyrus": {
+        "fontfile": "TANUKIMAGIC-2.TTF",
+        "fallback": {
+            "fontfile": "unifont_jp.otf",
+            "size": 16
+        },
+        "size": 17,
+        "threshold": 120,
+        "extra_x": 1,
+        "extra_y": 0,
+        "start_y": 0
+    }
+}

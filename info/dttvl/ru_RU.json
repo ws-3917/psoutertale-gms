@@ -1,0 +1,712 @@
+{
+    "sans": {
+        "fontfile": "sans-ru.ttf",
+        "size": 16,
+        "fallback": {
+            "fontfile": "unifont.otf",
+            "size": 16
+        },
+        "extra_x": 0,
+        "start_x": 1,
+        "extra_y": -2,
+        "start_y": -1,
+        "special": {
+            "d": {
+                "extra_x": 1
+            },
+            "i": {
+                "start_x": 1,
+                "extra_x": -1
+            },
+            "j": {
+                "start_x": 1
+            },
+            "l": {
+                "start_x": 1,
+                "extra_x": -1
+            },
+            "m": {
+                "extra_x": 1
+            },
+            "o": {
+                "extra_x": -1
+            },
+            "S": {
+                "extra_x": -1
+            },
+            "w": {
+                "extra_x": 1
+            },
+            "@": {
+                "extra_x": 5
+            },
+            "A": {
+                "extra_x": 1
+            },
+            "C": {
+                "extra_x": 1
+            },
+            "G": {
+                "extra_x": 2
+            },
+            "H": {
+                "extra_x": 1
+            },
+            "I": {
+                "extra_x": -1
+            },
+            "J": {
+                "extra_x": 1
+            },
+            "L": {
+                "extra_x": -1
+            },
+            "M": {
+                "extra_x": 3
+            },
+            "N": {
+                "extra_x": 2
+            },
+            "O": {
+                "extra_x": 3
+            },
+            "P": {
+                "extra_x": -2
+            },
+            "Q": {
+                "extra_x": 3
+            },
+            "T": {
+                "extra_x": 1
+            },
+            "U": {
+                "extra_x": 1
+            },
+            "V": {
+                "extra_x": 2
+            },
+            "W": {
+                "extra_x": 5
+            },
+            "X": {
+                "extra_x": 2
+            },
+            "Y": {
+                "extra_x": 1
+            },
+            "Z": {
+                "extra_x": 1
+            },
+            "&": {
+                "extra_x": 2
+            },
+            "#": {
+                "extra_x": 2
+            },
+            "%": {
+                "extra_x": 3
+            },
+            ".": {
+                "start_x": 1
+            },
+            ",": {
+                "start_x": 1
+            },
+            "А": {
+                "extra_x": 1
+            },
+            "Е": {
+                "extra_x": 1
+            },
+            "Ё": {
+                "extra_x": 1
+            },
+            "И": {
+                "extra_x": 2
+            },
+            "Й": {
+                "extra_x": 2
+            },
+            "К": {
+                "extra_x": 2
+            },
+            "Н": {
+                "extra_x": 1
+            },
+            "О": {
+                "extra_x": 3
+            },
+            "Д": {
+                "extra_x": 4
+            },
+            "Л": {
+                "extra_x": 1
+            },
+            "Ф": {
+                "extra_x": 2
+            },
+            "П": {
+                "extra_x": 3
+            },
+            "Х": {
+                "extra_x": 2
+            },
+            "Ж": {
+                "extra_x": 4
+            },
+            "Ц": {
+                "extra_x": 1
+            },
+            "М": {
+                "extra_x": 3
+            },
+            "Ш": {
+                "extra_x": 4
+            },
+            "Щ": {
+                "extra_x": 5
+            },
+            "Ъ": {
+                "extra_x": 2
+            },
+            "Ы": {
+                "extra_x": 3
+            },
+            "Э": {
+                "extra_x": 2
+            },
+            "Ю": {
+                "extra_x": 7
+            },
+            "г": {
+                "extra_x": -1
+            },
+            "д": {
+                "extra_x": 2
+            },
+            "ж": {
+                "extra_x": 4
+            },
+            "м": {
+                "extra_x": 2
+            },
+            "ф": {
+                "extra_x": 4
+            },
+            "ц": {
+                "extra_x": 1
+            },
+            "ш": {
+                "extra_x": 2
+            },
+            "щ": {
+                "extra_x": 3
+            },
+            "ъ": {
+                "extra_x": 1
+            },
+            "ы": {
+                "extra_x": 2
+            },
+            "ю": {
+                "extra_x": 2
+            }
+        }
+    },
+    "hud": {
+        "fontfile": "crypt-ru.ttf",
+        "size": 8,
+        "fallback": {
+            "fontfile": "unifont.otf",
+            "size": 8
+        },
+        "start_y": 1,
+        "extra_y": 1,
+        "special": {
+            "(": {
+                "start_x": 1
+            }
+        }
+    },
+    "DTM-Mono": {
+        "fontfile": "determination-ru.ttf",
+        "size": 13,
+        "threshold": 128,
+        "fallback": {
+            "fontfile": "unifont.otf",
+            "size": 16
+        },
+        "extra_y": -2,
+        "start_y": -2,
+        "special": {
+            "∞": {
+                "extra_x": 10,
+                "start_x": 0,
+                "start_y": 1
+            },
+            "M": {
+                "extra_x": 1
+            },
+            "W": {
+                "extra_x": 1
+            },
+            "m": {
+                "extra_x": 1
+            },
+            "w": {
+                "extra_x": 1
+            },
+            ":": {
+                "start_x": -1
+            },
+            "·": {
+                "extra_x": 7,
+                "start_x": 3
+            },
+            "Δ": {
+                "extra_x": 1
+            },
+            ".": {
+                "start_x": 1
+            },
+            ",": {
+                "start_x": 1
+            },
+            "Д": {
+                "extra_x": 2
+            },
+            "Л": {
+                "extra_x": 1
+            },
+            "Ф": {
+                "extra_x": 4
+            },
+            "Ж": {
+                "extra_x": 4
+            },
+            "Ц": {
+                "extra_x": 1
+            },
+            "М": {
+                "extra_x": 1
+            },
+            "Ш": {
+                "extra_x": 4
+            },
+            "Щ": {
+                "extra_x": 6
+            },
+            "Ъ": {
+                "extra_x": 1
+            },
+            "Ы": {
+                "extra_x": 3
+            },
+            "Ю": {
+                "extra_x": 3
+            },
+            "г": {
+                "extra_x": -1
+            },
+            "д": {
+                "extra_x": 1
+            },
+            "ж": {
+                "extra_x": 4
+            },
+            "л": {
+                "extra_x": 1
+            },
+            "м": {
+                "extra_x": 1
+            },
+            "ф": {
+                "extra_x": 4
+            },
+            "ц": {
+                "extra_x": 1
+            },
+            "ш": {
+                "extra_x": 4
+            },
+            "щ": {
+                "extra_x": 5
+            },
+            "ъ": {
+                "extra_x": 1
+            },
+            "ы": {
+                "extra_x": 2
+            },
+            "ю": {
+                "extra_x": 2
+            }
+        }
+    },
+    "DTM-Sans": {
+        "fontfile": "determination-ru.ttf",
+        "size": 13,
+        "extra_x": -1,
+        "start_x": -1,
+        "threshold": 128,
+        "fallback": {
+            "fontfile": "unifont.otf",
+            "size": 16
+        },
+        "extra_y": -2,
+        "start_y": -2,
+        "special": {
+            "∞": {
+                "extra_x": 11,
+                "start_x": 0,
+                "start_y": 1
+            },
+            "M": {
+                "extra_x": 1
+            },
+            "W": {
+                "extra_x": 1
+            },
+            "m": {
+                "extra_x": 1
+            },
+            "w": {
+                "extra_x": 1
+            },
+            " ": {
+                "extra_x": -2
+            },
+            ":": {
+                "extra_x": -2,
+                "start_x": -1
+            },
+            "·": {
+                "extra_x": 7,
+                "start_x": 3
+            },
+            "[": {
+                "extra_x": -2,
+                "start_x": -2
+            },
+            "(": {
+                "extra_x": -2,
+                "start_x": -2
+            },
+            "{": {
+                "extra_x": -2,
+                "start_x": -2
+            },
+            "]": {
+                "extra_x": -2
+            },
+            ")": {
+                "extra_x": -2
+            },
+            "}": {
+                "extra_x": -2
+            },
+            "Δ": {
+                "extra_x": 1
+            },
+            ".": {
+                "start_x": 1
+            },
+            ">": {
+                "start_x": -1
+            },
+            ",": {
+                "start_x": 1
+            },
+            "Д": {
+                "extra_x": 2
+            },
+            "Л": {
+                "extra_x": 1
+            },
+            "Ф": {
+                "extra_x": 4
+            },
+            "Ж": {
+                "extra_x": 4
+            },
+            "Ц": {
+                "extra_x": 1
+            },
+            "М": {
+                "extra_x": 1
+            },
+            "Ш": {
+                "extra_x": 4
+            },
+            "Щ": {
+                "extra_x": 6
+            },
+            "Ъ": {
+                "extra_x": 1
+            },
+            "Ы": {
+                "extra_x": 3
+            },
+            "Ю": {
+                "extra_x": 3
+            },
+            "г": {
+                "extra_x": -1
+            },
+            "д": {
+                "extra_x": 1
+            },
+            "ж": {
+                "extra_x": 4
+            },
+            "л": {
+                "extra_x": 1
+            },
+            "м": {
+                "extra_x": 1
+            },
+            "ф": {
+                "extra_x": 4
+            },
+            "ц": {
+                "extra_x": 1
+            },
+            "ш": {
+                "extra_x": 4
+            },
+            "щ": {
+                "extra_x": 5
+            },
+            "ъ": {
+                "extra_x": 1
+            },
+            "ы": {
+                "extra_x": 2
+            },
+            "ю": {
+                "extra_x": 2
+            }
+        }
+    },
+    "smw": {
+        "fontfile": "smw.ttf",
+        "size": 18,
+        "fallback": {
+            "fontfile": "unifont.otf",
+            "size": 16
+        },
+        "extra_x": 1,
+        "extra_y": 1,
+        "start_y": 1,
+        "special": {
+            "1": {
+                "extra_x": -1
+            },
+            "I": {
+                "extra_x": -2
+            },
+            "M": {
+                "extra_x": 2
+            },
+            "N": {
+                "extra_x": 2
+            },
+            "W": {
+                "extra_x": 2
+            },
+            "i": {
+                "extra_x": -3,
+                "start_x": 1
+            },
+            "l": {
+                "extra_x": -4,
+                "start_x": 1
+            },
+            "m": {
+                "extra_x": 2
+            },
+            "w": {
+                "extra_x": 3
+            },
+            ".": {
+                "start_x": 2,
+                "extra_x": -2
+            }
+        }
+    },
+    "speechbubble": {
+        "fontfile": "dotumche-ru.ttf",
+        "fallback": {
+            "fontfile": "unifont.otf",
+            "size": 16
+        },
+        "size": 16,
+        "threshold": 128,
+        "start_y": 1,
+        "extra_x": 4,
+        "extra_y": 2
+    },
+    "battlehud": {
+        "fontfile": "mars-ru.ttf",
+        "extra_x": -2,
+        "size": 24,
+        "fallback": {
+            "fontfile": "unifont.otf",
+            "size": 16
+        },
+        "start_y": -2,
+        "special": {
+            " ": {
+                "extra_x": -4
+            },
+            "M": {
+                "extra_x": 3
+            },
+            "W": {
+                "extra_x": 3
+            },
+            "m": {
+                "extra_x": 3
+            },
+            "w": {
+                "extra_x": 3
+            },
+            ":": {
+                "extra_x": -6
+            }
+        }
+    },
+    "papyrus": {
+        "fontfile": "papyrus-ru.ttf",
+        "fallback": {
+            "fontfile": "unifont.otf",
+            "size": 16
+        },
+        "size": 15,
+        "extra_y": 8,
+        "start_y": 2,
+        "threshold": 128,
+        "special": {
+            "@": {
+                "extra_x": 2
+            },
+            "A": {
+                "extra_x": 1
+            },
+            "B": {
+                "extra_x": 2
+            },
+            "D": {
+                "extra_x": 2
+            },
+            "G": {
+                "extra_x": 1
+            },
+            "H": {
+                "extra_x": 1
+            },
+            "I": {
+                "start_y": -1,
+                "extra_x": -1,
+                "start_x": -1
+            },
+            "M": {
+                "extra_x": 2
+            },
+            "O": {
+                "extra_x": 2
+            },
+            "Q": {
+                "extra_x": 2
+            },
+            "S": {
+                "extra_x": 1
+            },
+            "U": {
+                "extra_x": 1
+            },
+            "V": {
+                "extra_x": 1
+            },
+            "W": {
+                "extra_x": 1
+            },
+            ".": {
+                "start_x": 1,
+                "start_y": 2
+            },
+            ",": {
+                "start_x": 1
+            },
+            "Д": {
+                "extra_x": 2
+            },
+            "Л": {
+                "extra_x": 1
+            },
+            "Ф": {
+                "extra_x": 4
+            },
+            "Ж": {
+                "extra_x": 4
+            },
+            "Ц": {
+                "extra_x": 1
+            },
+            "М": {
+                "extra_x": 1
+            },
+            "Ш": {
+                "extra_x": 4
+            },
+            "Щ": {
+                "extra_x": 5
+            },
+            "Ъ": {
+                "extra_x": 1
+            },
+            "Ы": {
+                "extra_x": 3
+            },
+            "Ю": {
+                "extra_x": 3
+            },
+            "г": {
+                "extra_x": -1
+            },
+            "д": {
+                "extra_x": 1
+            },
+            "ж": {
+                "extra_x": 4
+            },
+            "л": {
+                "extra_x": 1
+            },
+            "м": {
+                "extra_x": 1
+            },
+            "ф": {
+                "extra_x": 4
+            },
+            "ц": {
+                "extra_x": 1
+            },
+            "ш": {
+                "extra_x": 4
+            },
+            "щ": {
+                "extra_x": 5
+            },
+            "ъ": {
+                "extra_x": 1
+            },
+            "ы": {
+                "extra_x": 2
+            },
+            "ю": {
+                "extra_x": 2
+            }
+        }
+    }
+}

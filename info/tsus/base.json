@@ -1,0 +1,82 @@
+{
+    "fnt_crypt": {
+        "name": "CustomCryptofTomorrow",
+        "a": 0,
+        "b": false,
+        "c": false,
+        "d": 1,
+        "e": 0,
+        "f": 1,
+        "g": 1
+    },
+    "fnt_dotumche": {
+        "name": "c27Dotum",
+        "a": 0,
+        "b": true,
+        "c": false,
+        "d": 1,
+        "e": 0,
+        "f": 1,
+        "g": 1
+    },
+    "fnt_main": {
+        "name": "Custom8BitOperatorJVE",
+        "a": 0,
+        "b": false,
+        "c": false,
+        "d": 1,
+        "e": 0,
+        "f": 1,
+        "g": 1
+    },
+    "fnt_mainsm": {
+        "name": "Custom8BitOperatorJVE",
+        "a": 0,
+        "b": false,
+        "c": false,
+        "d": 1,
+        "e": 0,
+        "f": 1,
+        "g": 1
+    },
+    "fnt_dotumche_sm": {
+        "name": "Custom8BitOperatorJVE",
+        "a": 0,
+        "b": false,
+        "c": false,
+        "d": 1,
+        "e": 0,
+        "f": 1,
+        "g": 1
+    },
+    "fnt_mars": {
+        "name": "CustomMarsNeedsCunnilingus",
+        "a": 0,
+        "b": false,
+        "c": false,
+        "d": 1,
+        "e": 0,
+        "f": 1,
+        "g": 1
+    },
+    "fnt_papyrus": {
+        "name": "Papyrus",
+        "a": 0,
+        "b": true,
+        "c": false,
+        "d": 1,
+        "e": 0,
+        "f": 1,
+        "g": 1
+    },
+    "fnt_sans": {
+        "name": "Comic Sans MS",
+        "a": 0,
+        "b": true,
+        "c": false,
+        "d": 1,
+        "e": 0,
+        "f": 1,
+        "g": 1
+    }
+}

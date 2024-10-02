@@ -1,0 +1,80 @@
+{
+    "fnt_sans": {
+        "fontfile": "fzse-plus.ttf",
+        "size": 28,
+        "fallback": {
+            "fontfile": "unifont.otf",
+            "size": 32
+        },
+        "extra_y": -2,
+        "start_y": -2,
+        "extra_x": 2,
+        "threshold": 165
+    },
+    "fnt_crypt": {
+        "fontfile": "fusion-pixel-8px-zh_hans.ttf",
+        "threshold": 80,
+        "size": 16,
+        "fallback": {
+            "fontfile": "unifont.otf",
+            "size": 16
+        },
+        "start_y": -1
+    },
+    "fnt_main": {
+        "fontfile": "fzxs12-Pixel.ttf",
+        "threshold": 128,
+        "size": 24,
+        "start_y": 4,
+        "extra_x": 4,
+        "start_x": 3,
+        "extra_y": 4
+    },
+    "fnt_mainsm": {
+        "fontfile": "fzxs12-Pixel.ttf",
+        "size": 12,
+        "threshold": 128,
+        "extra_x": 2,
+        "start_x": 1,
+        "start_y": 3,
+        "extra_y": 3
+    },
+    "fnt_dotumche_sm": {
+        "fontfile": "fusion-pixel-10px-zh_hans.ttf",
+        "size": 10,
+        "extra_x": 0,
+        "extra_y": 2,
+        "fallback": {
+            "fontfile": "unifont.otf",
+            "size": 8
+        },
+        "special": {}
+    },
+    "fnt_dotumche": {
+        "fontfile": "fzxs14.ttf",
+        "size": 14,
+        "extra_x": 6,
+        "start_y": 1,
+        "extra_y": 2,
+        "threshold": 120
+    },
+    "fnt_mars": {
+        "fontfile": "fusion-pixel-8px-zh_hans.ttf",
+        "threshold": 80,
+        "size": 16,
+        "start_y": 2,
+        "start_x": -1,
+        "extra_y": 2
+    },
+    "fnt_papyrus": {
+        "fontfile": "fzkt_GBK.ttf",
+        "size": 34,
+        "fallback": {
+            "fontfile": "unifont.otf",
+            "size": 32
+        },
+        "threshold": 155,
+        "extra_y": 0,
+        "start_y": 0
+    }
+}

@@ -1,0 +1,50 @@
+{
+    "sans": {
+        "size": 16,
+        "shift_x": 0,
+        "shift_y": 0,
+        "height": 14
+    },
+    "hud": {
+        "size": 8,
+        "shift_x": 0.5,
+        "shift_y": 0.5,
+        "height": 6
+    },
+    "DTM-Mono": {
+        "size": 16,
+        "shift_x": -0.5,
+        "shift_y": 0.5,
+        "height": 14
+    },
+    "DTM-Sans": {
+        "size": 16,
+        "shift_x": 0.5,
+        "shift_y": 0.5,
+        "height": 14
+    },
+    "smw": {
+        "size": 20,
+        "shift_x": 0,
+        "shift_y": 0,
+        "height": 20
+    },
+    "speechbubble": {
+        "size": 18,
+        "shift_x": 0,
+        "shift_y": 0,
+        "height": 17
+    },
+    "battlehud": {
+        "size": 24,
+        "shift_x": 0.5,
+        "shift_y": 0.5,
+        "height": 18
+    },
+    "papyrus": {
+        "size": 16,
+        "shift_x": 0,
+        "shift_y": 0,
+        "height": 16
+    }
+}
